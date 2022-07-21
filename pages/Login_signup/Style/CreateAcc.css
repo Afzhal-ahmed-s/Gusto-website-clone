@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#employees{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* border: 1px solid; */
+    width: 35%;
+    margin: auto;
+    justify-items: center;
+    padding: 40px;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+
+}button{
+    width: 100%;
+    padding: 17px;
+    margin: 7px;
+    background-color: teal;
+    border: transparent;
+    border-radius: 5px;
+    font-size: 17px;
+    color: white;
+
+}
