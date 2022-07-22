@@ -2,6 +2,33 @@
      font-family: poppins, sans-serif;
  }
 
+ #grey_bg{
+    height: 280px;
+    background-color: #fafafa;
+    width: 100%;
+ }
+
+ .i1_tooltip{
+    text-align: left;
+    /* background-color: blue; */
+ }
+
+ li {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: left;
+ }
+
+ .tooltip-inner a{
+color: white;
+text-decoration: underline;
+}
+
+.tooltip-inner{
+    background-color: #043b3b !important;
+    opacity: 1 !important;
+}
+
  body {
      padding: 0;
      margin: 0;
@@ -10,7 +37,7 @@
  .i1_mega_container{
     background-color: #fafafa;
     width: 100%;
-    height: auto;
+    height: 1700px;
  }
 
  .i1_h1_div{
@@ -47,12 +74,81 @@
     border: 1px solid #d2d2d2;
  }
 
+ .i1_mini_triple_flex_part2{
+    /* display: flex; */
+    width: 31%;
+    height: 750px;
+    /* border: 1px solid black; */
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    justify-content: space-between;
+    border-radius: 0 0 8px 8px;
+    border: 1px solid #d2d2d2;
+    border-top: none;
+ }
+
+ .i1_remove_mini_flex{
+    border-radius: 8px 8px 0 0;
+    border-bottom: none;
+ }
+
+ .display_none{
+    display: none;
+ }
+
+ .i1_btn_trigger:hover{
+    color: rgb(58, 179, 185) !important;
+    cursor: pointer;
+ }
+
+ .i1_flex_part2_unique_box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid red; */
+    background-color: #f9f5f2;
+    text-align: center;
+    padding: 20px;
+    margin-top: 52px;
+    border-radius: 5px;
+ }
+
+ .i1_flex_part2_unique_box_img{
+    width: 130px;
+    height: 40px;
+    margin-bottom: 20px;
+ }
+
+ .i1_spl_box_p1{
+    width: 80%;
+    font-weight: 700;
+ }
+
+ .i1_spl_box_p2,.i1_spl_box_p2_pt2{
+    color: gray;
+ }
+
+
+
 .i1_mini_flex_container{
     display: flex;
     width: 80%;
     margin: auto;
     justify-content: space-between;
-    margin-bottom: 55px;
+    /* margin-bottom: 55px; */
+}
+
+.i1_mini_flex_container_part2{
+    display: flex;
+    width: 80%;
+    height: 4;
+    margin: auto;
+    justify-content: space-between;
+    /* margin-bottom: 55px; */
 }
 
 .i1_p1{
@@ -93,10 +189,16 @@
 }
 
 .i1_btn_trigger{
-    margin-left:900px ;
+    margin-left: 900px;
+    font-size: 20px;
+    color: #0a8080;
+    padding-bottom: 41px;
+    text-decoration: underline;
 }
 
-
+.i1_div_btn_trigger{
+    margin-top:90px ;
+}
 
 .i1_p2{
     margin-bottom: -2px;
@@ -110,10 +212,11 @@
 
     border-radius: 8px;
     margin: auto;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     justify-content: space-around;
     box-sizing: border-box; 
     padding: 20px;
+    background-color: white;
  }
 
  .i4_remove_from_mini{
@@ -131,6 +234,7 @@
     box-sizing: border-box; 
     padding: 20px;
     display: none;
+    background-color: white;
  }
 
  .i4v2_flex_container.show-inner{
@@ -269,6 +373,10 @@ justify-content: space-between;
  /* .c1_i4, .c1_i4_v2{
     border-right: 1px solid white;
   } */
+
+/* a{
+    text-align: left;
+} */
 
  @media (min-width: 320px) and (max-width: 480px) {
      #i4_flex1 {
@@ -528,4 +636,85 @@ justify-content: space-between;
     height: 50px;
     background-color: white;
     font-weight: 600;
+}
+
+.tooltip-icon {
+    width: 18px;
+    height: 18px;
+    filter: grayscale(1);
+    float: right;
+    margin-top: 4px;
+    margin-left: 75px;
+}
+
+.padding-right-20 {
+    padding-right: 20px;
+}
+
+.multiple-flex-container {
+    width: 100%;
+}
+
+.multiple-flex-container > h5 {
+    margin: 20px 7rem 0px 7rem;
+    background-color: #f8f5f2;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 15px;
+    letter-spacing: -0.2px;
+}
+
+.i2_r3_img {
+    margin-left: 8px;
+    width: 15px;
+    height: 18px;
+    float: right;
+}
+
+.margin-top-0 {
+    margin-top: 0px;
+}
+
+.custom_row {
+    display: flex;
+    margin: 0px 7rem 0px 7rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.custom_row > * {
+    width: auto;
+    padding: 20px;
+}
+
+.pricing-check {
+    width: 13%;
+    border-left: 1px solid #eaeaea;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://prod.gusto-assets.com/assets/svg/icons/pricing-check-1b7f9509a1c6b93949d40037a61cacf54c91dabf1023d6ae2a6d3a04e9cf8aee.svg);
+}
+
+.ele_1 {
+    width: 46rem;
+}
+
+.ele_2 {
+    width: 2rem;
+}
+
+.pricing-empty {
+    width: 13%;
+    border-left: 1px solid #eaeaea;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: none;
+}
+
+.pricing-plus {
+    width: 13%;
+    border-left: 1px solid #eaeaea;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://prod.gusto-assets.com/assets/svg/icons/pricing-plus-74974a63ca5f79dcd0533010b4c2bcc57ab8da3064a7af2c2971ace24fd35569.svg);
 }
