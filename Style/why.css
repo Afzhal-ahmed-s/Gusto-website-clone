@@ -1,1 +1,161 @@
-/* https://prod.gusto-assets.com/wp-content/uploads/Hero_Desktop-LG%402x.png */
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#logo {
+    height: 40px;
+}
+
+/*Start NAVBAR */
+#Navbar {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%;
+
+    margin: auto;
+    height: 80px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#Navbar_right {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+#Navbar_right,
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+#Navbar_1 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+.fa-angle-down {
+    margin-left: 5px;
+    transition: all 0.4s ease;
+    color: black;
+}
+
+#head,
+.fa-angle-down:hover {
+    transform: rotate(180deg);
+    color: black;
+}
+
+#heading1:hover,
+#head:hover {
+    color: #12a0ac;
+    /* transform: r; */
+
+}
+
+#button_right {
+    display: flex;
+    gap: 10px;
+}
+
+#Search_button {
+    background-color: white;
+    border: none;
+    height: 40px;
+    width: 70px;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    /* margin-right: 10px; */
+}
+
+.fa-magnifying-glass {
+    color: #12a0ac;
+    font-size: 13px;
+    /* margin-left: 0px; */
+}
+
+#Sign_in {
+    background-color: #f8f5f2;
+    border: none;
+    border-radius: 7px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#craete_btn {
+    background-color: #f45d48;
+    border: none;
+    height: 40px;
+    width: 140px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+
+}
+
+#craete_btn,
+.textcreate {
+    color: white;
+}
+
+/* START TOP-SECTION */
+#Banner_Section{
+    background-image: url(https://prod.gusto-assets.com/wp-content/uploads/Hero_Desktop-LG%402x.png);
+    width: 98%;
+    margin: auto;
+    height: 900px;
+    background-size:cover;
+    /* padding-top: -100px; */
+    text-align: center;
+    /* line-height: 2px; */
+}
+#Banner_Section>p{
+    padding-top: 100px;
+    color: #f45d48;
+    font-size: 16px;
+    font-weight: 700;
+}
+/* END TOP-SECTION */
+#Middle_Section{
+    text-align: center;
+    height: 200px;
+    margin-top: 150px;
+}
+#Middle_Section>h1{
+    font-size:40px;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 600;
+}
+#imh{
+    width: 100px;
+    height: 60px;
+}
+#M_mid_Section_1{
+    padding-top: 90px;
+     display: flex;
+     justify-content: space-around;
+     width: 60%;
+     align-items: center;
+     margin: auto;
+     padding-bottom: 90px;
+ }
+ #modern_icon>a{
+    font-size: 15px;
+    font-weight: 600;
+    /* line-height: .0px; */
+}
+#modern_icon>a:hover{
+    border-bottom: 1px solid #12a0ac;
+    color: #12a0ac;
+}

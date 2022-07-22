@@ -217,41 +217,34 @@ a {
 /* <!---------------------------------------START-Landing-page-M-Section-----------------------------------> */
 #M_Section{
     display: flex;
-    justify-content: space-evenly;
-    /* -top: 20px; */
-    /* text-align: center; */
+    justify-content: space-around;
     margin: auto;
-    gap: 30px;
-        border: 1px solid black;
-
+    padding: 20px;
+    /* border: 1px solids black; */
     width: 90%;
-    align-items: center;
+    
 }
 #ima_1{
     background-image: url(https://prod.gusto-assets.com/assets/homepage/doodle-background-b0e2595deb0ccbef1675cf334a57d48104aa61824573dc6869088cb2b2334469.png.webp);
     background-size:cover;
-    height: 200px;
-    /* border: 1px solid black; */
-
-    width: 20%;
+    width: 25%;
 }
 #icon{
     /* border: 1px solid black; */
-    width: 20%;
+    width: 23%;
     text-align: center;
     padding-top: 10px;
     height: 200px;
-
+    line-height: 20px;
 }
 #ads{
     display: flex;
-    padding-left: 70px;
-    padding-right: 70px;
+    
+    /* padding-left: 70px; */
+    /* padding-right: 70px; */
 }
 #ads1{
     display: flex;
-    padding-left: 50px;
-    padding-right: 40px;
     align-items: center;
 }
 #icon1{
@@ -259,18 +252,32 @@ a {
     width: 20%;
     height: 200px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
+    /* line-height: 38px; */
+
     /* line-height: 1px; */
     
 }
-#icon1>h4{
-    font-size: 17px;
-    margin-top: 1px;
+#p2{
+    border-right: 2px solid black;
+    padding-right: 10px;
+    padding-left: 60px;
+    font-size: 13px;
+    font-weight: 600;
+
+}
+#p3{
+    
+ width: 200px;
+ font-size: 13px;
+
 }
 #p1{
+    font-weight: 600;
+    font-size: 13px;
     border-right: 2px solid black;
-    padding: 5px;
-    width: 100px;
+    margin: auto;
+    width: 200px;
 }
 
 /* <!---------------------------------------START-Landing-page-M-Section-----------------------------------> */
@@ -353,6 +360,8 @@ margin-bottom:-50px ;
 }
 #Middle_Section{
     text-align: center;
+    height: 200px;
+    margin-top: 150px;
 }
 #Middle_Section>h1{
     font-size:40px;
@@ -373,16 +382,19 @@ margin-bottom:-50px ;
 
 
 /* FOOTER */
+#Footer{
+    width: 80%;
+    margin: auto;
+}
 #Footer_Section{
     display: flex;
     padding-top: 100px;
-    width: 90%;
-    margin: auto;
-    /* display: inline; */
+    
 }
-#inline_left>div>p{
+#inline_left>div>p,#middle_right>div>p,#right_inline>div>p{
     color:#f45d48 ;
     width: 170px;
+    font-size: 18px;
     font-weight: 600;
 }
 #inline_left>div{
@@ -396,10 +408,12 @@ margin-bottom:-50px ;
     /* width: 180px; */
     /* border: 1px solid black; */
 }
-#inline_left>div>a{
+#inline_left>div>a,#middle_right>div>a,#right_inline>div>a,#middle_left>div>a{
     width: 160px;
-    font-size:14px;
+    font-size:16px;
     padding-top: 20px;
+    color: #525257;
+    line-height: 35px;
 }
 #inline_left>div>a:hover{
     color:#12a0ac;
@@ -407,9 +421,7 @@ margin-bottom:-50px ;
 #a1{
     width: 200px;
 }
-#word{
-    display: flex;
-}
+
 #inline_1{
     width: 300px;
 }
@@ -418,6 +430,7 @@ margin-bottom:-50px ;
 
     /* display: block; */
     width: 300px;
+    
 }
 #middle_left>div>p{
     color:#f45d48;
@@ -425,26 +438,71 @@ margin-bottom:-50px ;
     font-weight: 600;
     
 }
-#middle_left>div>a:hover{
+#middle_left>div>a:hover,#right_inline>div>a:hover,#middle_right>div>a:hover{
     color:#12a0ac;
 }
-#middle_left>div>a{
-    padding-top: 20px;
-    font-size: 14px;
-    width: 160px;
-}
+
 #middle_right>div{
     width: 300px;
-
+    margin-left: 100px;
 }
-#middle_right>div>p{
+#middle_right>div>p,#right_inline>div>p{
     color:#f45d48;
     width: 170px;
     font-weight: 600;
 }
-#middle_right>div>a{
-    padding-top: 20px;
-    font-size: 14px;
-    width: 160px;
+
+
+/* -------------------------------------STart-Footer------------------------------------------------------------- */
+
+#mid_Footer{
+    margin-top: 70px;
+}
+
+#word{
+    display: flex;
+   
+}
+#Bd{
+    border-top: 1px solid #dddee0;
+    padding-left: 150px;  
+    padding-top: 30px;
+    line-height: 30px;
+}
+#Bd>a{
+    color: #525257;
+    
+}
+#word1{
+    /* margin-left: 0px; */
+    margin-right: 40px;
+    color: #525257;
+
 
 }
+#heading1{
+    margin-top: -20px;
+}
+.head{
+    color: #12a0ac;
+    font-size: 16px;
+    font-weight: 600;
+}
+#below_Footer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    color: #525257;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+#below_Footer>i{
+    color: #848484;
+}
+#below_Footer>i:hover{
+    color: #12a0ac;
+    font-size: 19px;
+}
+/* -------------------------------------end-Footer------------------------------------------------------------- */
