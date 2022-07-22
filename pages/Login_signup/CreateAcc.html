@@ -14,18 +14,20 @@
         <p>We offer one intuitive place to manage payroll,</p>
         <p>benefits, and HR for your business.</p>
         <br><br><br><br>
-        <p>Tell us a little about your business.</p>
+        <p id="head">Tell us a little about your business.</p>
         <br><br>
-        <h1>How many employees do you</h1>
-        <h1>have, including yourself?</h1>
+        <h1 id="line1">How many employees do you</h1>
+        <h1 id="line2">have, including yourself?</h1>
         <br><br>
-        <p>have, including yourself?</p>
-
-        <button>0-2 employees</button>
-        <button>3-9 employees</button>
-        <button>10-24 employees</button>
-        <button>25-99 employees</button>
-        <button>100+ employees</button>
+        <p id="have">have, including yourself?</p>
+        <div id="buttons">
+            <button onclick="myFunction()">0-2 employees</button>
+            <button onclick="myFunction()">3-9 employees</button>
+            <button onclick="myFunction()">10-24 employees</button>
+            <button onclick="myFunction()">25-99 employees</button>
+            <button onclick="myFunction()">100+ employees</button>
+        </div>
+        
 
     </div>
     <div id="footer">
@@ -34,4 +36,4 @@
         <p>Does your company use Gusto today? <u>Sign in here.</u></p>
         </div>
 </body>
-</html>
+</html><script src="./scripts/createAcc.js"></script>

@@ -25,27 +25,30 @@
     <br>
     <p>or</p>
     <br>
-    <input class="input" type="text" id="name" placeholder="Full name">
-    <br><br>
-    <input class="input" type="email" id="email" placeholder="Work email address">
-    <br><br>
-    <input class="input" type="text" id="companyName" placeholder="Company name">
-    <br><br>
-    <div id="input">
-        <input type="number" id="no_of_emp" placeholder="No. of employees">
-        <input type="number" id="com_phone" placeholder="Company phone">
-    </div>
-    <br>
-    <input class="input" type="password" id="password" placeholder="Set password">
-    
-    <div id="strength">
-        <p>Password strength:</p>
-        <p><svg font-size="14px" aria-hidden="true" class="gwb_DkTS1 gwb_3u7ES" role="img" focusable="false" width="1em" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 8a6 6 0 1012 0A6 6 0 002 8zM8 .5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z"></path></svg> Use 8 or more characters.</p>
-        <p><svg font-size="14px" aria-hidden="true" class="gwb_DkTS1 gwb_3u7ES" role="img" focusable="false" width="1em" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 8a6 6 0 1012 0A6 6 0 002 8zM8 .5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z"></path></svg> Use a minimum of one letter.</p>
-        <p> <svg font-size="14px" aria-hidden="true" class="gwb_DkTS1 gwb_3u7ES" role="img" focusable="false" width="1em" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 8a6 6 0 1012 0A6 6 0 002 8zM8 .5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z"></path></svg> Use a minimum of one number.</p>
-    </div>
-    <input class="input" type="password" id="Confirm" placeholder="Confirm password">
-    <button onclick="getStart()" id="getstarted">Get started</button>
+    <form id="form">  
+            <input class="input" type="text" id="name" placeholder="Full name">
+            <br><br>
+            <input class="input" type="email" id="email" placeholder="Work email address">
+            <br><br>
+            <input class="input" type="text" id="companyName" placeholder="Company name">
+            <br><br>
+            <div id="input">
+                <input type="number" id="no_of_emp" placeholder="No. of employees">
+                <input type="number" id="com_phone" placeholder="Company phone">
+            </div>
+            <br>
+            <input class="input" type="password" id="password" placeholder="Set password">
+            <br><br>
+            <progress id="progress_bar" value="0" max="100"></progress>
+            <div id="strength">
+                <p>Password strength:</p>
+                <p class="gwb_DkTS1gwb_3u7ES" id="more"><svg  font-size="14px" aria-hidden="true" class="gwb_DkTS1gwb_3u7ES" role="img" focusable="false" width="1em" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 8a6 6 0 1012 0A6 6 0 002 8zM8 .5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z"></path></svg> Use 8 or more characters.</p>
+                <p class="gwb_DkTS1gwb_3u7ES" id="one"><svg id="one" font-size="14px" aria-hidden="true" class="gwb_DkTS1gwb_3u7ES" role="img" focusable="false" width="1em" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 8a6 6 0 1012 0A6 6 0 002 8zM8 .5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z"></path></svg> Use a minimum of one letter.</p>
+                <p  id="min_one"> <svg font-size="14px" aria-hidden="true" class="gwb_DkTS1gwb_3u7ES" role="img" focusable="false" width="1em" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 8a6 6 0 1012 0A6 6 0 002 8zM8 .5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z"></path></svg> Use a minimum of one number.</p>
+            </div>
+            <input class="input" type="password" id="Confirm" placeholder="Confirm password">
+            <button id="getstarted">Get started</button>
+    </form>
     <br>
     <p>Already use Gusto? <u><a href="./login.html">Sign in here</a></u>.</p>
     <br>
@@ -57,4 +60,4 @@
     <p>Does your company use Gusto today? <u><a href="./login.html">Sign in here</a></u>.</p>
     </div>
 </body>
-</html>
+</html><script src="./scripts/signup.js"></script>
