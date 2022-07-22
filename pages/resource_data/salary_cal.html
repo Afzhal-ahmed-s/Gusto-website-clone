@@ -56,10 +56,13 @@
                 <h4>Hourly Employee</h4>
                 <div id="tax_cal">
                     <p>What is your employee's hourly wages?</p>
-                    <div><span><p class="dol">$</p> </span><span><input id="Hr_wages" type="number" placeholder="$0.00"></span>
+                    <div><span>
+                            <p class="dol">$</p>
+                        </span><span><input oninput="calculate()" id="Hr_wages" type="number"
+                                placeholder="$0.00"></span>
                     </div>
                     <p>How many regular hours did your employee work during this pay period?</p>
-                    <input type="number" placeholder="Hours Worked">
+                    <input oninput="calculate()" type="number" placeholder="Hours Worked" id="Hr_work">
                 </div>
                 <button id="overtime">Add Overtime</button>
                 <div id="after_but">
@@ -144,18 +147,70 @@
                 <div id="main">
                     <div class="sall_pay">
                         <p>Gross Pay</p>
-                        <p>$0</p>
+                        <p id="gross_pay">$0</p>
                     </div>
-                    <div class="sall_pay">
-                        <p>Income taxes</p>
-                        <p class="per1">0%</p>
-                        <p>$0</p>
-                    </div>
-                    <div class="sall_pay">
-                        <p>FICA taxes</p>
-                        <p class="per2">0%</p>
-                        <p>$0</p>
-                    </div>
+                    <ul id="accordion">
+                        <li>
+                            <label id="label" for="first">
+                                <div class="split"><span class="span"> &#x3e; </span>Income taxes</div> <span
+                                    class="tax_perst">0%</span><span class="tax_perst2">$0</span>
+                            </label>
+                            <input type="radio" name="accoedion" id="first" unchecked>
+                            <div class="content">
+                                <div class="row">
+                                    <p>Federal Income Tax</p>
+                                    <p id=" F_I_tax">0%</p>
+                                    <p>$0</p>
+                                </div>
+                                <div class="row">
+                                    <p id="sdi">Alabama SDI</p>
+                                    <p id="sdi_tax">0%</p>
+                                    <p>$0</p>
+                                </div>
+                                <div class="row">
+                                    <p id="S_tax">Alabama State Tax</p>
+                                    <p id="S_tax">0%</p>
+                                    <p>$0</p>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <!-- -------------------- -->
+                        <div id="li2">
+                            <li>
+                                <label id="label" for="second">
+                                    <div class="split"><span class="span"> &#x3e; </span>FICA taxes</div> <span
+                                        class="tax_perst">0%</span><span class="tax_perst2">$0</span>
+                                </label>
+                                <input type="radio" name="accoedion" id="second" unchecked>
+                                <div class="content">
+                                    <div class="row">
+
+                                        <p>Social Security</p>
+                                        <p id="S_Sec">0%</p>
+                                        <p>$0</p>
+                                    </div>
+                                    <div class="row">
+                                        <p>Medicare</p>
+                                        <p id="M_crae">0%</p>
+                                        <p>$0</p>
+                                    </div>
+                                    <div class="row">
+                                        <p>Additional Medicare</p>
+                                        <p id="A_med">0%</p>
+                                        <p>$0</p>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </div>
+                    </ul>
+                    <!-- ------------------------------------- -->
+
+
+                    <!-- ------------------------------------- -->
+
                     <div class="sall_pay">
                         <p>Pre-tax</p>
                         <p class="per3">0%</p>
@@ -189,12 +244,12 @@
         or claims you may have against Gusto in connection with its use.
     </div>
     <!-- ------------------------- -->
-<div id="join_sec">
-    <p style="color:#ef523c ;">Want to leave the payroll work to someone else?</p>
-    <h1>Join more than 200,000
-        businesses that use Gusto.</h1>
-</div>
-    
+    <div id="join_sec">
+        <p style="color:#ef523c ;">Want to leave the payroll work to someone else?</p>
+        <h1>Join more than 200,000
+            businesses that use Gusto.</h1>
+    </div>
+
 </body>
 
 </html>

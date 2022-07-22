@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 #heading {
@@ -236,9 +237,10 @@ h4 {
 
 #box {
     position: sticky;
-    width: 80%;
+    width: 82%;
     margin: auto;
     top: 65px;
+    margin-right: 20px;
 
 }
 
@@ -250,6 +252,11 @@ h4 {
     color: white;
     display: inline-block;
     border-radius: 5px;
+}
+
+#middele_right {
+
+    margin-right: 50px;
 }
 
 #heading_right>p:first-child {
@@ -266,30 +273,42 @@ h4 {
 #main {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-top: 8px;
-    height: 290px;
+    height: 290px auto;
     border-radius: 5px;
     padding: 10px;
     padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#main>div:nth-child(3) {
+    margin-top: -20px;
 }
 
 .sall_pay>p:first-child {
-    width: 115px;
+    width: 140px;
+}
+
+.sall_pay:last-child {
+    color: #087575;
 }
 
 #discrption {
-    width: 79%;
+    width: 100%;
     font-size: 14px;
     margin: auto;
     margin-top: 100px;
     color: #293d56;
     margin-bottom: 50px;
     padding: 10px;
+    width: 80%;
+    line-height: 20px;
 }
 
 .sall_pay>p {
     font-weight: bold;
 }
 
+/* ---------------------------------------- */
 #join_sec {
     width: 50%;
     margin: auto;
@@ -307,3 +326,89 @@ h4 {
 #join_sec>p {
     font-size: 17px;
 }
+
+/* -------------------------------- */
+.row {
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+}
+
+.row>p:first-child {
+    width: 140px;
+    font-size: 14px;
+
+}
+
+.split {
+    width: 140px;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+.row>p {
+    color: #087575;
+    font-weight: bold;
+}
+
+#accordion {
+    width: 100%;
+}
+
+#accordion li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.tax_perst2 {
+    margin-right: -18px;
+    width: 40px;
+    text-align: center;
+}
+
+#accordion li label {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#accordion li label .span {
+    transform: rotate(360deg);
+    font-size: 16px;
+    color: #333;
+    /* margin-right: -115px; */
+    /* margin-left: 33px; */
+}
+
+#accordion li label .span:hover {
+    transform: rotate(90deg);
+}
+
+#accordion label+input[type="radio"] {
+    display: none;
+}
+
+#accordion .content {
+    padding: 0 10px;
+    line-height: 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+#accordion label+input[type="radio"]:checked+.content {
+    max-height: 400px;
+}
+
+#li2 {
+    margin-top: -25px;
+}
+
+/*------------------------------- next--------------------------- */
