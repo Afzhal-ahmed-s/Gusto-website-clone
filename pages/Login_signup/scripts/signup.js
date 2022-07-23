@@ -1,52 +1,6 @@
 let userData = JSON.parse(localStorage.getItem("UserData")) || [];
+let strength = document.getElementById("power");
 
-
-
-
-document.querySelector("#getstarted").addEventListener("click",myFunction);
-function myFunction(event){
-    event.preventDefault();
-    let obj = {
-        name:document.getElementById('name').value,
-        email:document.getElementById('email').value,
-        c_name:document.getElementById('companyName').value,
-        no_of_emp:document.getElementById('no_of_emp').value,
-        com_phone:document.getElementById('com_phone').value,
-        password:document.getElementById('password').value,
-        Confirm_pass:document.getElementById('Confirm').value,
-    }
-
-    let flag = false;
-    userData.forEach((el) => {
-        if(el.email===obj.email){
-            flag=true;
-        }
-    });
-
-    if(flag===false){
-        let pass = obj.password;
-        if(pass.match(/[a-z]+/)&&pass.match(/[0-9]+/)&&pass.match(/[$@#&!]+/)){
-           document.getElementById("bar").style.width="100%";
-           document.getElementById("bar").style.backgroundColor="teal";
-           document.querySelector("#more").style.color = "green";
-           
-       if(obj.name.length>0&&obj.email.length>0&&obj.c_name.length>0){
-           userData.push(obj);
-           console.log(userData);
-           localStorage.setItem("UserData",JSON.stringify(userData));
-           window.location.href="login.html";
-       }
-  
-   }else if(obj.password.length<7){
-       document.getElementById("progress_bar").value=5;
-       document.querySelector("#more").style.color = "red";
-       
-   }
-    }else{
-        alert("This email already used!");
-    }
-         
-}
     document.getElementById("name").addEventListener("input",nameFun1);
     function nameFun1(event){
         event.preventDefault();
@@ -128,11 +82,10 @@ function myFunction(event){
             Confirm_pass:document.getElementById('Confirm').value,
         }
             let p1 = document.getElementById("p4");
-            let strength = document.getElementById("power");
             //   console.log("name:",obj.name.length);
         if(obj.password.length<=0){
                 p1.innerText = "A valid password is required.";
-                strength.innerText = "Week";
+                strength.innerText = "To Week";
                 p1.style.color = "#c15732";
                 document.getElementById("bar").style.width="0%";
 
@@ -153,29 +106,36 @@ function myFunction(event){
                 p1.innerText="";
                 document.getElementById("bar").style.width="5%";
                 document.getElementById("bar").style.backgroundColor="crimson";
+                // strength.innerText = "To Week";
                if(obj.password.length>1){
                 document.getElementById("bar").style.width="10%";
                 document.getElementById("bar").style.backgroundColor="crimson";
+                strength.innerText = "To Week";
             }
             if(obj.password.length>2){
                 document.getElementById("bar").style.width="20%";
                 document.getElementById("bar").style.backgroundColor="crimson";
+                strength.innerText = "To Week";
             }
             if(obj.password.length>3){
                 document.getElementById("bar").style.width="30%";
                 document.getElementById("bar").style.backgroundColor="crimson";
+                strength.innerText = "Week";
             }
              if(obj.password.length>4){
                 document.getElementById("bar").style.width="40%";
                 document.getElementById("bar").style.backgroundColor="teal";
+                strength.innerText = "Week";
             }
             if(obj.password.length>5){
                 document.getElementById("bar").style.width="50%";
                 document.getElementById("bar").style.backgroundColor="teal";
+                
             }
             if(obj.password.length>6){
                 document.getElementById("bar").style.width="60%";
                 document.getElementById("bar").style.backgroundColor="teal";
+                
             }
              if(obj.password.length>7){
                 document.getElementById("bar").style.width="70%";
@@ -190,22 +150,25 @@ function myFunction(event){
             }
 
             
-            if(pass.match(/[a-z]+/)&&pass.match(/[0-9]+/)&&pass.length>7    ){
+            if(pass.match(/[a-z]+/)&&pass.match(/[0-9]+/)&&pass.length>7){
                 console.log("happy1");
                 document.getElementById("bar").style.width="80%";
                 document.getElementById("bar").style.backgroundColor="teal";
+                strength.innerText = "Good";
                
             }
-            if(pass.match(/[a-z]+/)&&pass.match(/[0-9]+/)&&pass.match(/[$@#&!]+/)){
+            if(pass.match(/[a-z]+/)&&pass.match(/[0-9]+/)&&pass.match(/[$@#&!]+/)&&pass.length>7){
                 console.log("happy1");
                 document.getElementById("bar").style.width="100%";
                 document.getElementById("bar").style.backgroundColor="teal";
+                strength.innerText = "Strong";
             }
             if(pass.match(/[a-z]+/)){
                 console.log("tik")
                 document.querySelector("#one").style.color = "green";
                 let img = document.getElementById("tik2");
                 img.src="https://cdn-icons-png.flaticon.com/512/716/716225.png";
+
             }else{
                 document.querySelector("#one").style.color = "red";
                 let img = document.getElementById("tik2");
@@ -216,6 +179,7 @@ function myFunction(event){
                 document.querySelector("#min_one").style.color = "green";
                 let img = document.getElementById("tik3");
                 img.src="https://cdn-icons-png.flaticon.com/512/716/716225.png";
+                
             }else{
                 document.querySelector("#min_one").style.color = "red";
                 let img = document.getElementById("tik3");
@@ -226,3 +190,49 @@ function myFunction(event){
           
         }
     }
+
+    document.querySelector("#getstarted").addEventListener("click",myFunction);
+function myFunction(event){
+    event.preventDefault();
+    let obj = {
+        name:document.getElementById('name').value,
+        email:document.getElementById('email').value,
+        c_name:document.getElementById('companyName').value,
+        no_of_emp:document.getElementById('no_of_emp').value,
+        com_phone:document.getElementById('com_phone').value,
+        password:document.getElementById('password').value,
+        Confirm_pass:document.getElementById('Confirm').value,
+    }
+
+    let flag = false;
+    userData.forEach((el) => {
+        if(el.email===obj.email){
+            flag=true;
+        }
+    });
+
+    if(flag===false){
+        let pass = obj.password;
+        if(pass.match(/[a-z]+/)&&pass.match(/[0-9]+/)&&pass.match(/[$@#&!]+/)){
+            
+           document.getElementById("bar").style.width="100%";
+           document.getElementById("bar").style.backgroundColor="teal";
+           document.querySelector("#more").style.color = "green";
+           
+       if(obj.name.length>0&&obj.email.length>0&&obj.c_name.length>0){
+           userData.push(obj);
+           console.log(userData);
+           localStorage.setItem("UserData",JSON.stringify(userData));
+           window.location.href="login.html";
+       }
+  
+   }else if(obj.password.length<7){
+       document.getElementById("progress_bar").value=5;
+       document.querySelector("#more").style.color = "red";
+       
+   }
+    }else{
+        alert("This email already used!");
+    }
+         
+}
