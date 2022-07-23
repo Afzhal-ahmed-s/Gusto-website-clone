@@ -10,8 +10,9 @@ body {
 
 #heading_img h1+p {
     font-size: 19px;
-    width: 76%;
+    width: 90%;
     color: #462548;
+    line-height: 25px;
 }
 
 .T {
@@ -30,12 +31,15 @@ body {
 }
 
 #img {
-    width: 54%;
+    width: 55%;
+    object-fit: contain;
+    margin-right: 20px;
 }
 
 #heading {
     width: 54%;
     padding: 5px;
+    margin-left: 25px;
 }
 
 #img img {
@@ -99,61 +103,79 @@ body {
     grid-template-rows: auto;
     gap: 10px;
     color: #0A8080;
-    font-size: 20px;
+    font-size: 18px;
+
 }
-#country>p{
+
+#country>p {
     cursor: pointer;
 }
+
 #H_pay_cal {
     padding: 40px;
     margin-top: 70px;
+    margin-left: 25px;
 }
 
 #H_pay_cal>h1 {
     margin-bottom: 30px;
     font-size: 39px;
 }
+
 /* ---------------------button see mor or see less---------- */
 
-#see_more ,#see_less{
-    font-size:18px;;
+#see_more,
+#see_less {
+    font-size: 18px;
+    ;
     background-color: white;
     border: none;
     margin-top: 20px;
     width: 155px;
     height: 39px;
 }
-#see_more:hover ,#see_less:hover{
+
+#see_more:hover,
+#see_less:hover {
     color: #0A8080;
     cursor: pointer;
 }
-#see_more2 ,#see_less2{
-    font-size:18px;;
+
+#see_more2,
+#see_less2 {
+    font-size: 18px;
+    ;
     background-color: white;
     border: none;
     margin-top: 20px;
     width: 155px;
     height: 39px;
 }
-#see_more2:hover ,#see_less2:hover{
+
+#see_more2:hover,
+#see_less2:hover {
     color: #0A8080;
     cursor: pointer;
 }
+
 /* --------------------------state------------------------- */
-#state{
+#state {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     gap: 10px;
     color: #0A8080;
-    font-size: 20px;
+    font-size: 18px;
 }
-#state>p{
+
+#state>p {
     cursor: pointer;
 }
+
 #S_pay_cal {
     padding: 40px;
     margin-top: 70px;
+    margin-left: 25px;
 }
 
 #S_pay_cal>h1 {

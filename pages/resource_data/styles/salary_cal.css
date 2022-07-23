@@ -4,7 +4,9 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-
+a{
+    color: blue;
+}
 #heading {
     width: 65%;
     margin-left: 195px;
@@ -19,7 +21,7 @@
 #heading>p {
     width: 70%;
     font-size: large;
-   line-height: 25px;
+    line-height: 25px;
 }
 
 #heading>h1+p {
@@ -270,9 +272,11 @@ h4 {
     padding: 14px;
     justify-content: space-between;
 }
-#sall_pay{
+
+#sall_pay {
     margin-top: -20px;
 }
+
 #main {
     /* position: relative; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -354,15 +358,18 @@ h4 {
     color: #087575;
     font-weight: bold;
 }
-.row>p:last-child{
-    position: relative;
-   margin-right: -8.6px;
-   padding-left: 10px;
-   
+
+.row>p:last-child {
+    /* position: relative; */
+    margin-right: -8.6px;
+    padding-left: 10px;
+
 }
-.tax_perst2{
-    position: relative;
+
+.tax_perst2 {
+    /* position: relative; */
 }
+
 #accordion {
     width: 100%;
 }
@@ -395,12 +402,7 @@ h4 {
     transform: rotate(360deg);
     font-size: 16px;
     color: #333;
-    /* margin-right: -115px; */
-    /* margin-left: 33px; */
-}
 
-#accordion li label .span:hover {
-    transform: rotate(90deg);
 }
 
 #accordion label+input[type="radio"] {
