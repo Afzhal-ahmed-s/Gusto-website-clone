@@ -1,0 +1,262 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator</title>
+    <link rel="stylesheet" href="./styles/salary_cal.css">
+</head>
+
+<body>
+    <div id="navbar"> navbar</div>
+
+    <div id="heading">
+        <h1>Hourly Paycheck and Payroll Calculator</h1>
+        <p>Need help calculating paychecks? Use Gusto’s hourly paycheck calculator to determine withholdings and
+            calculate take-home pay for your hourly employees.</p>
+        <p>Simply enter their federal and state W-4 information as well as their pay rate, deductions and benefits, and
+            we’ll crunch the numbers for you.</p>
+    </div>
+
+    <!-- ----------middele section---------  -->
+
+    <div id="middele">
+        <div id="middele_left">
+            <p><span>Salaride employee?</span> <span><a href="">Switch to salary</a></span></p>
+
+            <div id="select_state">
+                <h4> Select Your State</h4>
+                <p>Where dose your business oprate?</p>
+                <select name="" id="state">
+                    <option value="Alabama">Alabama</option>
+                    <option value="Alaska">Alaska</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="Arkansas">Arkansas</option>
+                    <option value="California">California</option>
+                    <option value="Colorado">Colorado</option>
+                    <option value="Connecticut">Connecticut</option>
+                    <option value="Delaware">Delaware</option>
+                    <option value="Distict of Columbia">Distict of Columbia</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Hawail">Hawail</option>
+                    <option value="Idaho">Idaho</option>
+                    <option value="IIIions">IIIions</option>
+                    <option value="Indiana">Indiana</option>
+                    <option value="Iowa">Iowa</option>
+                    <option value="Kansas">Kansas</option>
+                    <option value="kentucky">kentucky</option>
+                    <option value="Louisia">Louisia</option>
+                    <option value="Maine">Maine</option>
+                    <option value="Mryaland">Mryaland</option>
+                    <option value="Massachusetts">Massachusetts</option>
+                    <option value="Minnesota">Minnesota</option>
+                </select>
+            </div>
+            <div id="hourly_emp">
+                <h4>Hourly Employee</h4>
+                <div id="tax_cal">
+                    <p>What is your employee's hourly wages?</p>
+                    <div><span>
+                            <p class="dol">$</p>
+                        </span><span><input oninput="debounce(calculate,3000)" id="Hr_wages" type="number"
+                                placeholder="$0.00"></span>
+                    </div>
+                    <p>How many regular hours did your employee work during this pay period?</p>
+                    <input oninput="debounce(calculate,3000)" type="number" placeholder="Hours Worked" id="Hr_work">
+                </div>
+                <button id="overtime">Add Overtime</button>
+                <div id="after_but">
+                    <p> When Will your Empolyee be paid?</p>
+                    <input type="date" placeholder="DD/MM/YYYY">
+                    <p>How often dose your employee get paid?</p>
+                    <select name="" id="select_criteria">
+                        <option value="Weekly">Weekly</option>
+                        <option value="Twise a month">Twise a month</option>
+                        <option value="Annually">Annually</option>
+                        <option value="Monthly">Monthly</option>
+                    </select>
+                </div>
+            </div>
+            <div id="federal_tax">
+                <h4>Federal Taxes</h4>
+                <p>Please enter information about your employee’s federal tax filing and withholding status. You can
+                    find this information on your employee’s <a href="">W-4.</a> </p>
+                <p>What’s your employee’s federal filing status (1c)?</p>
+                <select name="" id="marid_status">
+                    <option value="Single">Single</option>
+                    <option value="Marid">Marid</option>
+                    <option value="Head of Hushold">Head of Hushold</option>
+                    <option value="Exemtion from Whithholding">Exemtion from Whithholding</option>
+                </select>
+                <p>Dependent total (3) (if applicable)</p>
+                <div><span class="dol">$</span> <span><input id="Hr_wages" type="number" placeholder="$0.00"></span>
+                </div>
+                <p>Other income (4a) (optional)</p>
+                <div><span class="dol">$</span> <span><input id="Hr_wages" type="number" placeholder="$0.00"></span>
+                </div>
+                <p>Deductions (4b) (optional)</p>
+                <div><span class="dol">$</span> <span><input id="Hr_wages" type="number" placeholder="$0.00"></span>
+                </div>
+                <p>What additional federal withholding (4c), if any, does your employee request?</p>
+                <div><span class="dol">$</span> <span><input id="Hr_wages" type="number" placeholder="$0.00"></span>
+                </div>
+            </div>
+            <div id="state_tax">
+                <h4>kansas State Taxes</h4>
+                <p>Please enter your employee’s Kansas state tax withholdings based on Form K-4.</p>
+                <p>What’s your employee’s state filing status?</p>
+                <select name="" id="">
+                    <option value="Single">Single</option>
+                    <option value="Do Not Whithhold">DO Not Whithhold</option>
+                    <option value="Joint">Joint</option>
+                </select>
+                <p>How many state allowances does your employee claim?</p>
+                <input type="number" placeholder="0">
+                <p>Does your employee have any additional state withholding amounts?</p>
+                <div><span class="dol">$</span> <span><input id="Hr_wages" type="number" placeholder="$0.00"></span>
+                </div>
+            </div>
+            <div id="special">
+                <h4>Special Exemptions</h4>
+                <p>In rare cases, employees are exempt from certain payroll taxes. If this applies to your employee,
+                    please select the exempt tax(es) here.</p>
+                <p>Is your employee exempt from any of the following taxes?</p>
+                <div class="check"> <input class="checkbox" type="checkbox" name="Social" id="social"
+                        value="Social"><span>Social
+                        Security</span></div>
+                <div class="check"> <input class="checkbox" type="checkbox" name="Federal Income" id=""><span>Federal
+                        Income
+                        Tax</span></div>
+                <div class="check"> <input class="checkbox" type="checkbox" name="Medicare" id=""><span>Medicare</span>
+                </div>
+                <div class="check"> <input class="checkbox" type="checkbox" name="Additional" id=""><span>Additional
+                        Medicare</span></div>
+                <div class="check"> <input class="checkbox" type="checkbox" name="Kansas State" id=""><span>Kansas State
+                        Tax</span></div>
+            </div>
+            <button id="submit"> Submit</button>
+        </div>
+
+        <!-- -------middelw right ------- -->
+
+        <div id="middele_right">
+            <div id="box">
+                <div id="heading_right">
+                    <p>Your employee’s estimated take home pay:</p>
+                    <p id="heading_pay">$0</p>
+                </div>
+
+                <div id="main">
+                    <div class="sall_pay">
+                        <p>Gross Pay</p>
+                        <p id="gross_pay">$0</p>
+                    </div>
+                    <ul id="accordion">
+                        <li>
+                            <label id="label" for="first">
+                                <div class="split"><span class="span" id="DownArrow"> &#x3e; </span> Income taxes</div>
+                                <span class="tax_perst" id="income">0%</span><span class="tax_perst2"
+                                    id="tax_perst2">$0</span>
+                            </label>
+                            <input type="radio" name="accoedion" id="first" unchecked>
+                            <div class="content">
+                                <div class="row">
+                                    <p>Federal Income Tax</p>
+                                    <p id="F_I_tax">0%</p>
+                                    <p id="tax_rup1">$0</p>
+                                </div>
+                                <div class="row">
+                                    <p id="sdi">Alabama SDI</p>
+                                    <p id="sdi_tax">0%</p>
+                                    <p id="tax_rup2">$0</p>
+                                </div>
+                                <div class="row">
+                                    <p id="S_tax">Alabama State Tax</p>
+                                    <p id="S_Tax">0%</p>
+                                    <p id="tax_rup3">$0</p>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <!-- -------------------- -->
+                        <div id="li2">
+                            <li>
+                                <label id="label" for="second">
+                                    <div class="split"><span class="span"> &#x3e; </span>FICA taxes</div> <span
+                                        class="tax_perst" id="F_D_I">0%</span><span class="tax_perst2"
+                                        id="tax_perst3">$0</span>
+                                </label>
+                                <input type="radio" name="accoedion" id="second" unchecked>
+                                <div class="content">
+                                    <div class="row">
+
+                                        <p>Social Security</p>
+                                        <p id="S_Sec">0%</p>
+                                        <p id="tax_rup4">$0</p>
+                                    </div>
+                                    <div class="row">
+                                        <p>Medicare</p>
+                                        <p id="M_care">0%</p>
+                                        <p id="tax_rup5">$0</p>
+                                    </div>
+                                    <div class="row">
+                                        <p>Additional Medicare</p>
+                                        <p id="A_med">0%</p>
+                                        <p id="tax_rup6">$0</p>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </div>
+                    </ul>
+                    <!-- ------------------------------------- -->
+
+                    <div class="sall_pay" id="sall_pay">
+                        <p>Pre-tax</p>
+                        <p class="per3">0%</p>
+                        <p>$0</p>
+                    </div>
+                    <div class="sall_pay">
+                        <p>post-tax</p>
+                        <p class="per4">0%</p>
+                        <p>$0</p>
+                    </div>
+                    <hr style="font-size: 0.1ch;">
+
+                    <div class="sall_pay">
+                        <p>Take home pay</p>
+                        <p id="per5" class="per5">0%</p>
+                        <p id="T_rup">$0</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="discrption">
+        The information provided by the Paycheck Calculator provides general information regarding the calculation of
+        taxes on wages. It is not a substitute for the advice of an accountant or other tax professional. The Paycheck
+        Calculator may not account for every tax or fee that applies to you or your employer at any time. ZenPayroll,
+        Inc., dba Gusto ("Gusto") does not warrant, promise or guarantee that the information in the Paycheck Calculator
+        is accurate or complete, and Gusto expressly disclaims all liability, loss or risk incurred by employers or
+        employees as a direct or indirect consequence of its use. By using the Paycheck Calculator, you waive any rights
+        or claims you may have against Gusto in connection with its use.
+    </div>
+    <!-- ------------------------- -->
+    <div id="join_sec">
+        <p style="color:#ef523c ;">Want to leave the payroll work to someone else?</p>
+        <h1>Join more than 200,000
+            businesses that use Gusto.</h1>
+    </div>
+    <div id="about_section">about_section</div>
+</body>
+
+</html>
+<script src="./scripts/salary_cal.js"></script>

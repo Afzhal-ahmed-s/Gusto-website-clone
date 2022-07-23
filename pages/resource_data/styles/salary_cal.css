@@ -1,0 +1,428 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    color: blue;
+}
+#heading {
+    width: 65%;
+    margin-left: 195px;
+    margin-top: 140px;
+}
+
+#heading>h1 {
+    width: 85%;
+    font-size: 53px;
+}
+
+#heading>p {
+    width: 70%;
+    font-size: large;
+    line-height: 25px;
+}
+
+#heading>h1+p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* ---------middel left section---------- */
+
+#middele {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 195px;
+    justify-content: space-between;
+}
+
+#middele_left {
+    width: 50%;
+}
+
+#middele_right {
+    width: 45%;
+}
+
+#select_state {
+    margin-top: 20px;
+}
+
+#select_state>h4 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #2bb3ca;
+}
+
+#state {
+    width: 98%;
+    height: 35px;
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 5px;
+    margin-top: 8px;
+    margin-bottom: 50px;
+}
+
+#hourly_emp>h4 {
+    font-size: 24px;
+    color: #2bb3ca;
+    margin-bottom: 15px;
+}
+
+#tax_cal {
+    background-color: #f7f7f7;
+    width: 97%;
+    margin-bottom: 20px;
+    padding: 5px 0px 15px 15px;
+}
+
+#tax_cal>p {
+    margin-top: 15px;
+}
+
+.dol {
+    /* font-size: 20px; */
+    font-style: normal;
+    /* color: rgb(127, 123, 123); */
+    border: 1px solid;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-right: -1.8px;
+    border: 00.01px solid;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background-color: #ededee;
+}
+
+#tax_cal>div input {
+    width: 92.5%;
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 5px;
+    height: 35px;
+    margin-top: 15px;
+}
+
+#tax_cal>input {
+    width: 98%;
+    border: 0px;
+    box-shadow: rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 5px;
+    height: 35px;
+    margin-top: 15px;
+}
+
+#overtime {
+    background-color: #f8f5f2;
+    width: 150px;
+    height: 39px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#after_but>input,
+select {
+    width: 98%;
+    border: 0px;
+    box-shadow: rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 5px;
+    height: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#federal_tax {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 24px;
+    color: #2bb3ca;
+    margin-bottom: 25px;
+}
+
+#federal_tax h4+p {
+    width: 88%;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#federal_tax h4+p+p {
+    margin-bottom: -8px;
+}
+
+#federal_tax>div input {
+    width: 92.5%;
+    border: 0px;
+    box-shadow: rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 5px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+
+#federal_tax p {
+    margin-bottom: 10px;
+}
+
+#state_tax {
+    margin-bottom: 20px;
+}
+
+#state_tax p {
+    width: 85%;
+}
+
+#state_tax p+p {
+    margin-top: 15px;
+    margin-bottom: -8px;
+}
+
+#state_tax p+input {
+    width: 98%;
+    border: 0px;
+    box-shadow: rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 5px;
+    height: 35px;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+
+#Hr_wages {
+    width: 92.5%;
+    border: 0px;
+    box-shadow: rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 5px;
+    height: 35px;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+
+#special {
+    margin-bottom: 30px;
+}
+
+#special>p {
+    width: 88%;
+    margin-bottom: 15px;
+
+}
+
+.checkbox {
+    width: 25px;
+    height: 35px;
+    margin-right: 8px;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+}
+
+#submit {
+    font-size: medium;
+    color: white;
+    background-color: #f45d48;
+    width: 100px;
+    height: 48px;
+    border: none;
+    border-radius: 6px;
+}
+
+/* --------------middele right section------------  */
+
+#box {
+    position: sticky;
+    width: 82%;
+    margin: auto;
+    top: 65px;
+    margin-right: 20px;
+
+}
+
+#heading_right {
+    width: 100%;
+    height: 85px;
+    text-align: center;
+    background-color: #087575;
+    color: white;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+#middele_right {
+
+    margin-right: 50px;
+}
+
+#heading_right>p:first-child {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.sall_pay {
+    display: flex;
+    padding: 14px;
+    justify-content: space-between;
+}
+
+#sall_pay {
+    margin-top: -20px;
+}
+
+#main {
+    /* position: relative; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 8px;
+    height: 290px auto;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#main>div:nth-child(3) {
+    margin-top: -20px;
+}
+
+.sall_pay>p:first-child {
+    width: 140px;
+}
+
+.sall_pay:last-child {
+    color: #087575;
+}
+
+#discrption {
+    width: 100%;
+    font-size: 14px;
+    margin: auto;
+    margin-top: 100px;
+    color: #293d56;
+    margin-bottom: 50px;
+    padding: 10px;
+    width: 80%;
+    line-height: 20px;
+}
+
+.sall_pay>p {
+    font-weight: bold;
+}
+
+/* ---------------------------------------- */
+#join_sec {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+#join_sec>h1 {
+    margin-top: 40px;
+    font-size: 43px;
+}
+
+#join_sec>p {
+    font-size: 17px;
+}
+
+/* -------------------------------- */
+.row {
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+}
+
+.row>p:first-child {
+    width: 140px;
+    font-size: 14px;
+
+}
+
+.split {
+    width: 140px;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+.row>p {
+    color: #087575;
+    font-weight: bold;
+}
+
+.row>p:last-child {
+    /* position: relative; */
+    margin-right: -8.6px;
+    padding-left: 10px;
+
+}
+
+.tax_perst2 {
+    /* position: relative; */
+}
+
+#accordion {
+    width: 100%;
+}
+
+#accordion li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.tax_perst2 {
+    margin-right: -18px;
+    width: 40px;
+    text-align: center;
+}
+
+#accordion li label {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#accordion li label .span {
+    transform: rotate(360deg);
+    font-size: 16px;
+    color: #333;
+
+}
+
+#accordion label+input[type="radio"] {
+    display: none;
+}
+
+#accordion .content {
+    padding: 0 10px;
+    line-height: 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+#accordion label+input[type="radio"]:checked+.content {
+    max-height: 400px;
+}
+
+#li2 {
+    margin-top: -25px;
+}
+
+/*------------------------------- next--------------------------- */
