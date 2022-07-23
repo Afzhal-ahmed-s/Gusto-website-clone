@@ -10,7 +10,7 @@ function footer(){
             <div>
                 <p>Built for you</p>
                 <a id="a1" href="">Starting a business</a><br>
-                <a href="">Switching to Gusto</a><br>
+                <a href=" ">Switching to Gusto</a><br>
                 <a href="">Working remotely</a><br>
                 <a href="">Why Gusto</a>
             </div>

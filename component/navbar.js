@@ -12,7 +12,7 @@ function Navbar(){
                 <div id="heading1">
                     <a href="" id="head">Why Gusto</a>
                 </div>
-                <div id="heading1">
+                <div id ="heading1">
                     <a href="" id="head">Payroll and more</a> <span><i class="fa-solid fa-angle-down"></i></span>
                 </div>
                 <div id="heading1">
