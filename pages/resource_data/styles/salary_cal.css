@@ -19,6 +19,7 @@
 #heading>p {
     width: 70%;
     font-size: large;
+   line-height: 25px;
 }
 
 #heading>h1+p {
@@ -269,8 +270,11 @@ h4 {
     padding: 14px;
     justify-content: space-between;
 }
-
+#sall_pay{
+    margin-top: -20px;
+}
 #main {
+    /* position: relative; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-top: 8px;
     height: 290px auto;
@@ -350,7 +354,15 @@ h4 {
     color: #087575;
     font-weight: bold;
 }
-
+.row>p:last-child{
+    position: relative;
+   margin-right: -8.6px;
+   padding-left: 10px;
+   
+}
+.tax_perst2{
+    position: relative;
+}
 #accordion {
     width: 100%;
 }

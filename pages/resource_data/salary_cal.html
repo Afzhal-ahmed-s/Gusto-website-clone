@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <div id="navbar"> navbar</div>
+
     <div id="heading">
         <h1>Hourly Paycheck and Payroll Calculator</h1>
         <p>Need help calculating paychecks? Use Gusto’s hourly paycheck calculator to determine withholdings and
@@ -58,16 +60,16 @@
                     <p>What is your employee's hourly wages?</p>
                     <div><span>
                             <p class="dol">$</p>
-                        </span><span><input oninput="calculate()" id="Hr_wages" type="number"
+                        </span><span><input oninput="debounce(calculate,3000)" id="Hr_wages" type="number"
                                 placeholder="$0.00"></span>
                     </div>
                     <p>How many regular hours did your employee work during this pay period?</p>
-                    <input oninput="calculate()" type="number" placeholder="Hours Worked" id="Hr_work">
+                    <input oninput="debounce(calculate,3000)" type="number" placeholder="Hours Worked" id="Hr_work">
                 </div>
                 <button id="overtime">Add Overtime</button>
                 <div id="after_but">
                     <p> When Will your Empolyee be paid?</p>
-                    <input type="text" placeholder="DD/MM/YYYY">
+                    <input type="date" placeholder="DD/MM/YYYY">
                     <p>How often dose your employee get paid?</p>
                     <select name="" id="select_criteria">
                         <option value="Weekly">Weekly</option>
@@ -121,15 +123,17 @@
                 <p>In rare cases, employees are exempt from certain payroll taxes. If this applies to your employee,
                     please select the exempt tax(es) here.</p>
                 <p>Is your employee exempt from any of the following taxes?</p>
-                <div class="check"> <input class="checkbox" type="checkbox" name="Social" id=""><span>Social
+                <div class="check"> <input class="checkbox" type="checkbox" name="Social" id="social"
+                        value="Social"><span>Social
                         Security</span></div>
-                <div class="check"> <input class="checkbox" type="checkbox" name="Social" id=""><span>Federal Income
+                <div class="check"> <input class="checkbox" type="checkbox" name="Federal Income" id=""><span>Federal
+                        Income
                         Tax</span></div>
-                <div class="check"> <input class="checkbox" type="checkbox" name="Social" id=""><span>Medicare</span>
+                <div class="check"> <input class="checkbox" type="checkbox" name="Medicare" id=""><span>Medicare</span>
                 </div>
-                <div class="check"> <input class="checkbox" type="checkbox" name="Social" id=""><span>Additional
+                <div class="check"> <input class="checkbox" type="checkbox" name="Additional" id=""><span>Additional
                         Medicare</span></div>
-                <div class="check"> <input class="checkbox" type="checkbox" name="Social" id=""><span>Kansas State
+                <div class="check"> <input class="checkbox" type="checkbox" name="Kansas State" id=""><span>Kansas State
                         Tax</span></div>
             </div>
             <button id="submit"> Submit</button>
@@ -141,7 +145,7 @@
             <div id="box">
                 <div id="heading_right">
                     <p>Your employee’s estimated take home pay:</p>
-                    <p>$0</p>
+                    <p id="heading_pay">$0</p>
                 </div>
 
                 <div id="main">
@@ -152,25 +156,26 @@
                     <ul id="accordion">
                         <li>
                             <label id="label" for="first">
-                                <div class="split"><span class="span"> &#x3e; </span>Income taxes</div> <span
-                                    class="tax_perst">0%</span><span class="tax_perst2">$0</span>
+                                <div class="split"><span class="span"> &#x3e; </span> Income taxes</div> <span
+                                    class="tax_perst" id="income">0%</span><span class="tax_perst2"
+                                    id="tax_perst2">$0</span>
                             </label>
                             <input type="radio" name="accoedion" id="first" unchecked>
                             <div class="content">
                                 <div class="row">
                                     <p>Federal Income Tax</p>
-                                    <p id=" F_I_tax">0%</p>
-                                    <p>$0</p>
+                                    <p id="F_I_tax">0%</p>
+                                    <p id="tax_rup1">$0</p>
                                 </div>
                                 <div class="row">
                                     <p id="sdi">Alabama SDI</p>
                                     <p id="sdi_tax">0%</p>
-                                    <p>$0</p>
+                                    <p id="tax_rup2">$0</p>
                                 </div>
                                 <div class="row">
                                     <p id="S_tax">Alabama State Tax</p>
-                                    <p id="S_tax">0%</p>
-                                    <p>$0</p>
+                                    <p id="S_Tax">0%</p>
+                                    <p id="tax_rup3">$0</p>
                                 </div>
                             </div>
 
@@ -181,7 +186,8 @@
                             <li>
                                 <label id="label" for="second">
                                     <div class="split"><span class="span"> &#x3e; </span>FICA taxes</div> <span
-                                        class="tax_perst">0%</span><span class="tax_perst2">$0</span>
+                                        class="tax_perst" id="F_D_I">0%</span><span class="tax_perst2"
+                                        id="tax_perst3">$0</span>
                                 </label>
                                 <input type="radio" name="accoedion" id="second" unchecked>
                                 <div class="content">
@@ -189,17 +195,17 @@
 
                                         <p>Social Security</p>
                                         <p id="S_Sec">0%</p>
-                                        <p>$0</p>
+                                        <p id="tax_rup4">$0</p>
                                     </div>
                                     <div class="row">
                                         <p>Medicare</p>
-                                        <p id="M_crae">0%</p>
-                                        <p>$0</p>
+                                        <p id="M_care">0%</p>
+                                        <p id="tax_rup5">$0</p>
                                     </div>
                                     <div class="row">
                                         <p>Additional Medicare</p>
                                         <p id="A_med">0%</p>
-                                        <p>$0</p>
+                                        <p id="tax_rup6">$0</p>
                                     </div>
                                 </div>
 
@@ -208,10 +214,7 @@
                     </ul>
                     <!-- ------------------------------------- -->
 
-
-                    <!-- ------------------------------------- -->
-
-                    <div class="sall_pay">
+                    <div class="sall_pay" id="sall_pay">
                         <p>Pre-tax</p>
                         <p class="per3">0%</p>
                         <p>$0</p>
@@ -221,10 +224,12 @@
                         <p class="per4">0%</p>
                         <p>$0</p>
                     </div>
+                    <hr style="font-size: 0.1ch;">
+
                     <div class="sall_pay">
                         <p>Take home pay</p>
-                        <p class="per5">0%</p>
-                        <p>$0</p>
+                        <p id="per5" class="per5">0%</p>
+                        <p id="T_rup">$0</p>
                     </div>
 
                 </div>
@@ -249,7 +254,7 @@
         <h1>Join more than 200,000
             businesses that use Gusto.</h1>
     </div>
-
+    <div id="about_section">about_section</div>
 </body>
 
 </html>
