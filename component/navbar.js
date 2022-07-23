@@ -14,7 +14,7 @@ function Navbar(){
                 <a href="" id="head">Payroll and more</a> <span><i class="fa-solid fa-angle-down"></i></span>
             </div>
             <div id="heading">
-                <a href="" id="head">Pricing</a>
+                <a href="pricing_page.html" id="head">Pricing</a>
             </div>
             <div id="heading">
                 <a href="" id="head">For Accountants</a>
@@ -23,7 +23,7 @@ function Navbar(){
                 <div class="dropdown">
                     <span id="head1">Resources</span><span><i class="fa-solid fa-angle-down"></i></span>
                     <div class="dropdown-content">
-                    <p><a href="" id="hh">Calculators and tools</a><br>
+                    <p><a href="home_reso.html" id="hh">Calculators and tools</a><br>
                         <a href="">Tax calculators,checklists,<br> compensation tools, and more</a>
                     </p>
                     <p><a href="" id="hh">Calculators and tools</a><br>
@@ -34,7 +34,7 @@ function Navbar(){
                   <div class="dropdown">
                     <span id="head1">Built for you</span><span><i class="fa-solid fa-angle-down"></i></span>
                     <div class="dropdown-content">
-                    <p><a href=""> Starting a business?</a>
+                    <p><a href="Gusto start-bussiness.html">Gusto Starting a business?</a>
                     </p>
                     <p><a href="" id="hh">Calculators and tools</a><br>
                         <a href="">Tax calculators,checklists,<br> compensation tools, and more</a>
