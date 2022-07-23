@@ -11,7 +11,7 @@ body {
     height: 40px;
 }
 
-/*Start NAVBAR */
+/*------------------------------------Start NAVBAR -------------------------------------------*/
 #Navbar {
     display: flex;
     /* justify-content: space-between; */
@@ -56,7 +56,10 @@ a {
     transform: rotate(180deg);
     color: black;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
 #heading1:hover,
 #head:hover {
     color: #12a0ac;
@@ -143,8 +146,8 @@ a {
     color: white;
 }
 
-/*End NAVBAR */
-/*Start NAVBAR */
+/*-------------------------------------End NAVBAR ------------------------------------------------------*/
+
 #top_sect {
     object-fit: contain;
     margin-top: -10px;
