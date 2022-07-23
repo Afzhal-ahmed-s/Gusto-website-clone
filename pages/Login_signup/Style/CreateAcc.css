@@ -1,12 +1,13 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 #employees{
     display: grid;
     grid-template-columns: 1fr;
     /* border: 1px solid; */
-    width: 35%;
+    width: 40%;
     margin: auto;
     justify-items: center;
     padding: 40px;
@@ -33,6 +34,8 @@
     width: 100px;
 }u{
     color: teal;
+    cursor: pointer;
+
 }#footer{
     width: 40%;
     padding: 50px;
@@ -40,4 +43,20 @@
     text-align: center;
 }#buttons{
     width: 100%;
+}h3{
+    cursor: pointer;
+    color: teal;
+    margin-top: 20px;
+    margin-left: 10px;
+}#timediv{
+    width: 150px;
+    display: block;
+   text-align: center;
+}#time1{
+    width: 100%;
+    margin: 20px;
+}#time2{
+    width: 50px;
+    align-self: center;
+    /* margin: auto; */
 }

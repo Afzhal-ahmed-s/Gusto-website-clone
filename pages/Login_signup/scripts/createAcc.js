@@ -4,6 +4,8 @@
 // document.getElementById("buttons").addEventListener("click",myFunction);
 function myFunction(){
     // event.preventDefault();
+    let back = document.createElement("h3");
+    back.innerText="Back";
     let head = document.getElementById("head");
     head.innerText= "Just a few more questions.";
     let question1 = document.getElementById("line1");
@@ -21,7 +23,13 @@ function myFunction(){
     btn2.addEventListener("click",nextPage2);
     btn2.innerText="No"; 
     btn2.setAttribute("id","line2");
-    btns.append(btn1,btn2);
+    
+    back.addEventListener("click",backFun1);
+    function backFun1(){
+        window.location.reload();
+    }
+
+    btns.append(btn1,btn2,back);
     function nextPage2(){
         btns.innerHTML=null;
         question1.innerText="How do you currently run";
@@ -38,7 +46,10 @@ function myFunction(){
     btn3.addEventListener("click",nextPage3);
     btn3.innerText="We do it ourselves manually"; 
     btn3.setAttribute("id","line3");
-    btns.append(btn1,btn2,btn3);
+    back = document.createElement("h3");
+    back.innerText="Back";
+    btns.append(btn1,btn2,btn3,back);
+    back.addEventListener("click",myFunction);
         function nextPage3(){
             btns.innerHTML=null;
             question1.innerText="How would you describe your";
@@ -55,7 +66,10 @@ function myFunction(){
         btn3.addEventListener("click",nextPage4);
         btn3.innerText="We work in a factory, construction, or in the field"; 
         btn3.setAttribute("id","line3");
-        btns.append(btn1,btn2,btn3);
+        back = document.createElement("h3");
+        back.innerText="Back";
+        btns.append(btn1,btn2,btn3,back);
+        back.addEventListener("click",nextPage2);
         function nextPage4(){
                 btns.innerHTML=null;
                 question1.innerText="What type of workers do you";
@@ -72,8 +86,10 @@ function myFunction(){
             btn3.addEventListener("click",nextPage5);
             btn3.innerText="Both (W-2s & 1099s)"; 
             btn3.setAttribute("id","line3");
-            btns.append(btn1,btn2,btn3);
-            
+            back = document.createElement("h3");
+            back.innerText="Back";
+            btns.append(btn1,btn2,btn3,back);
+            back.addEventListener("click",nextPage3);
             function nextPage5(){
                 btns.innerHTML=null;
                 question1.innerText="Interested in offering health";
@@ -86,7 +102,10 @@ function myFunction(){
             btn2.addEventListener("click",nextPage6);
             btn2.innerText="No"; 
             btn2.setAttribute("id","line2");
-            btns.append(btn1,btn2);
+            back = document.createElement("h3");
+            back.innerText="Back";
+            btns.append(btn1,btn2,back);
+            back.addEventListener("click",nextPage4);
             function nextPage6(){
                 btns.innerHTML=null;
                 head.innerText= "One last question.";
@@ -100,13 +119,23 @@ function myFunction(){
             btn2.addEventListener("click",nextPage8);
             btn2.innerText="No, I’d like to learn more."; 
             btn2.setAttribute("id","line2");
-            btns.append(btn1,btn2);
+            back = document.createElement("h3");
+            back.innerText="Back";
+            btns.append(btn1,btn2,back);
+            back.addEventListener("click",nextPage5);
             function nextPage7(){
                 let container = document.getElementById("employees");
                 container.innerHTML = null;
+                let div = document.createElement("div");
+                div.setAttribute("id","timediv")
                 let img = document.createElement("img");
+                img.setAttribute("id","time1");
                 img.src = "https://prod.gusto-assets.com/assets/packs/media/icons/illo-clock-homepage-57611d12.svg";
-                container.append(img);
+                let img2 = document.createElement("img");
+                img2.setAttribute("id","time2");
+                img2.src = "https://cdn-icons-png.flaticon.com/512/6853/6853084.png";
+                div.append(img,img2);
+                container.append(div);
                 setTimeout(()=>{
                         window.location.href="Signup.html"
                 }, 1000);

@@ -8,9 +8,9 @@
 </head>
 <body>
     <!-- <img src="https://prod.gusto-assets.com/assets/packs/media/icons/illo-clock-homepage-57611d12.svg" alt="loading"> -->
-    <div id="logo"  >
-        <img src="https://prod.gusto-assets.com/assets/svg/header/gusto-logo-bfed4fde4bd2b5dd364ab0e58f77fc90aeefa2f1ecdb7fff524279642e23f9c2.svg" alt="logo">
-    </div>
+   <a href="index.html"> <div id="logo"  >
+    <img src="https://prod.gusto-assets.com/assets/svg/header/gusto-logo-bfed4fde4bd2b5dd364ab0e58f77fc90aeefa2f1ecdb7fff524279642e23f9c2.svg" alt="logo">
+</div></a>
     
     <div id="signup">
     <h1>Get started with Gusto</h1>
@@ -18,33 +18,41 @@
     <p>We offer one intuitive place to manage payroll,</p>
     <p>benefits, and HR for your business.</p>
     <br><br>
-    <p><span>Nice!</span> We could be a great fit for your business.</p>
+    <p><span id="nice">Nice!</span> We could be a great fit for your business.</p>
     <br>
-    <button id="google"><img src="https://prod.gusto-assets.com/assets/packs/media/icons/partner-logo-google-cd0f2b38.svg" alt="">
-    Sign up with Google</button>
+    <a href="https://www.google.com/"><button id="google"><img src="https://prod.gusto-assets.com/assets/packs/media/icons/partner-logo-google-cd0f2b38.svg" alt="">
+        Sign up with Google</button></a>
     <br>
     <p>or</p>
     <br>
-    <form id="form">  
+    <form id="form">
             <input class="input" type="text" id="name" placeholder="Full name">
-            <br><br>
+            <p class="p" id="p1"></p> 
+            <br>
             <input class="input" type="email" id="email" placeholder="Work email address">
-            <br><br>
+            <p class="p" id="p2"></p> 
+            <br>
             <input class="input" type="text" id="companyName" placeholder="Company name">
-            <br><br>
+            <p class="p" id="p3"></p>
+            <br>
             <div id="input">
                 <input type="number" id="no_of_emp" placeholder="No. of employees">
                 <input type="number" id="com_phone" placeholder="Company phone">
             </div>
             <br>
             <input class="input" type="password" id="password" placeholder="Set password">
-            <br><br>
-            <progress id="progress_bar" value="0" max="100"></progress>
+            <p class="p" id="p4"></p>
+            <br>
+
+            <div id="progress">
+                <div id="bar"></div>
+         </div>
+
             <div id="strength">
-                <p>Password strength:</p>
-                <p class="gwb_DkTS1gwb_3u7ES" id="more"><svg  font-size="14px" aria-hidden="true" class="gwb_DkTS1gwb_3u7ES" role="img" focusable="false" width="1em" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 8a6 6 0 1012 0A6 6 0 002 8zM8 .5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z"></path></svg> Use 8 or more characters.</p>
-                <p class="gwb_DkTS1gwb_3u7ES" id="one"><svg id="one" font-size="14px" aria-hidden="true" class="gwb_DkTS1gwb_3u7ES" role="img" focusable="false" width="1em" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 8a6 6 0 1012 0A6 6 0 002 8zM8 .5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z"></path></svg> Use a minimum of one letter.</p>
-                <p  id="min_one"> <svg font-size="14px" aria-hidden="true" class="gwb_DkTS1gwb_3u7ES" role="img" focusable="false" width="1em" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 8a6 6 0 1012 0A6 6 0 002 8zM8 .5a7.5 7.5 0 100 15 7.5 7.5 0 000-15z"></path></svg> Use a minimum of one number.</p>
+                <p>Password strength: <span id="power"></span></p>
+                <p class="gwb_DkTS1gwb_3u7ES" id="more"><img id="tik1" class="tik" src="https://cdn-icons-png.flaticon.com/512/808/808569.png" alt=""> Use 8 or more characters.</p>
+                <p class="gwb_DkTS1gwb_3u7ES" id="one"><img id="tik2" class="tik" src="https://cdn-icons-png.flaticon.com/512/808/808569.png" alt=""></svg> Use a minimum of one letter.</p>
+                <p  id="min_one"><img id="tik3" class="tik" src="https://cdn-icons-png.flaticon.com/512/808/808569.png" alt=""></svg> Use a minimum of one number.</p>
             </div>
             <input class="input" type="password" id="Confirm" placeholder="Confirm password">
             <button id="getstarted">Get started</button>
@@ -60,4 +68,7 @@
     <p>Does your company use Gusto today? <u><a href="./login.html">Sign in here</a></u>.</p>
     </div>
 </body>
-</html><script src="./scripts/signup.js"></script>
+</html>
+<script src="./scripts/signup.js">
+    
+</script>

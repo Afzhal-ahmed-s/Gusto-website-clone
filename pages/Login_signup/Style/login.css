@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 #container{
     display: grid;
@@ -32,7 +33,10 @@
     color: teal;
 }input{
     height: 40px;
+    padding:0px 10px;
     border: 0px;
+    outline: none;
+    font-weight: bold;
     background-color: rgb(234, 233, 233);
     border-bottom: 2px solid;
     border-color: rgb(142, 142, 142);
@@ -81,24 +85,39 @@ background-color:transparent;
     display: flex;
     gap: 10px;
     width: 100%;
-}#buttons>button{
-    font-weight: bold;
-    font-size: 15px;
+}#buttons>a{
     width: 100%;
-    color: teal;
     height: 50px;
     display: flex;
     gap: 5px;
     justify-content: center;
-    align-items: center;
+    border-radius: 5px;
+    background-color:transparent;
+}#buttons>a>button{
+    width: 100%;
+    font-weight: bold;
+    color: teal;
+    font-size: 15px;
     padding: 5px 10px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
     border:1px solid teal; 
     border-radius: 5px;
-background-color:transparent;
-}#footer{
+    background-color:transparent;
+}
+#footer{
     width: 40%;
     padding: 50px;
     margin: auto;
     text-align: center;
     font-size: 20px;
+}a{
+    text-decoration: none;
+    color: black;
+}#xero{
+    width: 30px;
+}#intuit{
+    width: 20px;
 }

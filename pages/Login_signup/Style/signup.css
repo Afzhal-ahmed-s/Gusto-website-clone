@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 #signup{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -24,7 +25,7 @@
     align-items: center;
     padding: 5px 10px;
     border: transparent;
-background-color:#f8f5f2;
+ background-color:#f8f5f2;
 }#google>img{
     height: 60%;
 
@@ -44,11 +45,11 @@ background-color:#f8f5f2;
 }
 input{
     border: 1px solid rgb(222, 219, 219);
+    outline: none;
 }#strength{
     justify-content: left;
     text-align: left;
     letter-spacing: 0.3px;
-    
 }#strength>p{
     margin: 10px;
 }#getstarted{
@@ -88,26 +89,29 @@ input{
     border-radius: 100px;
    
 }
-/* progress {
-    border: 0;
-    height: 40px;
-    border-radius: 20px;
-} */
-progress::-webkit-progress-bar {
-    border: 0;
-    height: 10px;
-    border-radius: 20px;
-    background-color: rgb(203, 200, 200);
+#nice{
+    font-size: 20px;
+    font-weight: bold;
 }
-progress::-webkit-progress-value {
-    border: 0;
+
+
+#progress{
+    width: 100%;
     height: 10px;
-    background: crimson;
-    border-radius: 20px 0px 0px 20px;
+    background-color: rgb(212, 211, 211);
+    border-radius: 10px;
 }
-progress::-moz-progress-bar {
-    border: 0;
+#bar{ 
+    width: 0%;
     height: 10px;
-    border-radius: 20px;
-    background: green;
+    background-color: crimson;
+    border-radius: 10px;
+}
+.p{
+    font-size: 20px;
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+}.tik{
+    width: 13px;
 }
