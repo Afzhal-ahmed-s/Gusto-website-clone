@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #logo {
@@ -164,7 +164,7 @@ a {
 #Banner_Section>#hea2{
     padding-top: 270px;
     color: #f45d48;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
 }
 #Banner_Section>h1{
@@ -216,7 +216,7 @@ a {
     font-weight: 600;
 }
 #imh{
-    width: 100px;
+    width: 150px;
     height: 60px;
 }
 #M_mid_Section_1{
@@ -235,6 +235,160 @@ a {
 #modern_icon>a:hover{
     border-bottom: 1px solid #12a0ac;
     color: #12a0ac;
+}
+/* ---------------------------------PlAN-SECTION------------------------------------ */
+#plan{
+    background-color: #f8f5f2;
+    height: 250px;
+    padding-top: 80px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+#plan>h1{
+    font-size:40px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+#plan>button{
+    background-color: #f45d48;
+    border: none;
+    height: 50px;
+    width: 180px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+#plan>button>a{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*---------------- MIDDLE-FLEX-SECTION ------------------------------------------------------------*/
+#middle_flex{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    /* padding: 50px; */
+    text-align: left;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin-bottom: 100px;
+    /* border: 1px solid black; */
+}
+#middle_flex1>h1{
+    font-size: 40px;
+    font-weight: 500;
+    /* padding: 10px; */
+}
+#middle_flex1>a{
+    color: #12a0ac;
+    font-size:18px;
+    font-weight: 500;
+}
+#desc{
+    line-height: 27px;
+    padding-bottom: 15px;
+}
+#hea3{
+    color: #f45d48;
+    font-weight: 600;
+    font-size: 18px;
+}
+#checked{
+    display: flex;
+    gap: 80px;
+    margin-top: 30px;
+    /* border: 1px solid black; */
+}
+
+#checked_2{
+    margin-left: -40px;
+}
+#Eligible{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    background-color:#feefe8;
+    border-radius: 7px;
+}
+.fa-check{
+    color: #12a0ac;
+    font-size: 19px;
+    font-weight: 900;
+}
+#flex{
+    display: flex;
+    gap: 10px;
+    text-align: left;
+    align-items: center;
+    /* line-height: 12px; */
+}
+#image_banner{
+    width: 500px;
+    padding-top: 90px;
+}
+
+/* Employee-benefits-section */
+#Employee_benefit{
+    text-align: center;
+    background-color: #f8f5f2;
+}
+#EB_1{
+    padding-top: 50px;  
+}
+#EB_1>h1{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 55px;
+}
+#EP_p{
+    font-size: 18px;
+    line-height: 26px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+#EB_1>a{
+    color: #12a0ac;
+    font-size: 18px;
+    font-weight: 500;
+}
+#EB_1>a:hover{
+    border-bottom: 2px solid #12a0ac;
+}
+#EP_image{
+    width: 1300px;
+    height: auto;
+    /* margin: auto; */
+}
+/* ---------------------START-CARD-------------------- */
+#card_section{
+    display: flex;
+    gap: 30px;
+    margin: auto;
+    justify-content: center;
+}
+#card_section_1{
+    border: 1px solid #dddee0;
+    width: 400px;
+    height: 500px;
+    padding-left: 20px;
+    text-align: left;
+    padding-right: 20px;
+    line-height: 25px;
+    background-color: white;
+}
+#card_section_1>#Card_p{
+    border-bottom: 1px solid #525257;
+}
+#card_section_2{
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;
+    text-align: left;
+    background-color: white;
 }
 
 /* ------------------------------------------------------FOOTER----------------------------- */

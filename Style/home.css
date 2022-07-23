@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #logo {
@@ -48,7 +48,9 @@ a {
     transition: all 0.4s ease;
     color: black;
 }
-
+#heading{
+    margin-top: -2px;
+}
 #head,
 .fa-angle-down:hover {
     transform: rotate(180deg);

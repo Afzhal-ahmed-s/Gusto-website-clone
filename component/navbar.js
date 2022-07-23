@@ -1,3 +1,9 @@
+let username = JSON.parse(localStorage.getItem("username")) || "";
+if(username.length<=0){
+  username="Sign in";
+}
+// console.log("username:",username);
+
 function Navbar(){
     return`
     <div id="Navbar_1">
@@ -8,17 +14,17 @@ function Navbar(){
                     src="https://prod.gusto-assets.com/assets/svg/header/gusto-logo-bfed4fde4bd2b5dd364ab0e58f77fc90aeefa2f1ecdb7fff524279642e23f9c2.svg"
                     alt="logo">
             </div>
-            <div id="heading1">
-                <a href="" id="head">Why Gusto</a>
+            <div id="heading">
+                <a href="WhyGusto.html" id="head">Why Gusto</a>
             </div>
-            <div id="heading1">
+            <div id="heading">
                 <a href="" id="head">Payroll and more</a> <span><i class="fa-solid fa-angle-down"></i></span>
             </div>
-            <div id="heading1">
+            <div id="heading">
                 <a href="" id="head">Pricing</a>
             </div>
-            <div id="heading1">
-                <a href="" id="head">For Accountants</a>
+            <div id="heading">
+                <a href="" id="head">For Accountants</a><span><i class="fa-solid fa-angle-down"></i></span>
             </div>
             
                 <div class="dropdown">
@@ -48,7 +54,7 @@ function Navbar(){
                 <span><i class="fa-solid fa-magnifying-glass"></i></span><button id="Search_button">Search</button>
             </div>
             <div>
-                <button id="Sign_in"><a href="">Sign in</a></button>
+                <button id="Sign_in"><a href="">${username}</a></button>
             </div>
             <div id="Create_Account">
                 <button id="craete_btn"><a href="" class="textcreate"> Create Account</a></button>
