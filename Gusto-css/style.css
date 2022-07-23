@@ -206,7 +206,7 @@ a {
 #animation>p {
     text-align: center;
     color: red;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 22px;
 
 }
@@ -219,7 +219,7 @@ a {
 
 #bussiness>p {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -230,7 +230,7 @@ a {
 
 #complete {
     border: 1px solid transparent;
-    width: 100%;
+    width: 99%;
     height: 500px;
     display: flex;
     margin-top: 200px;
@@ -264,12 +264,12 @@ a {
 
 #complete>div:nth-child(2)>p+p {
     color: black;
-    font-size: 50px;
+    font-size: 40px;
 
 }
 
 #complete>div:nth-child(2)>p+p+p {
-    font-size: 20px;
+    font-size: 18px;
 
 }
 
@@ -323,12 +323,12 @@ a {
 
 #complete-2>div:nth-child(1)>p+p {
     color: black;
-    font-size: 50px;
+    font-size: 45px;
 
 }
 
 #complete-2>div:nth-child(1)>p+p+p {
-    font-size: 20px;
+    font-size: 18px;
 
 }
 
@@ -374,12 +374,12 @@ a {
 
 #complete-3>div:nth-child(2)>p+p {
     color: black;
-    font-size: 50px;
+    font-size: 45px;
 
 }
 
 #complete-3>div:nth-child(2)>p+p+p {
-    font-size: 20px;
+    font-size: 18px;
 
 }
 
@@ -425,12 +425,12 @@ a {
 
 #complete-4>div:nth-child(1)>p+p {
     color: black;
-    font-size: 50px;
+    font-size: 45px;
 
 }
 
 #complete-4>div:nth-child(1)>p+p+p {
-    font-size: 20px;
+    font-size: 18px;
 
 }
 
@@ -540,6 +540,7 @@ a {
     gap: 25px;
     margin: auto;
     margin-top: 80px;
+    
 
 
 
@@ -555,7 +556,7 @@ a {
 }
 
 #ist>div:nth-child(1)>h3 {
-    font-size: 40px;
+    font-size: 35px;
 
 }
 
@@ -580,11 +581,12 @@ a {
 
 #ist>div:nth-child(2)>h7 {
     font-size: 25px;
+    
 
 }
 
 #ist>div:nth-child(2)>p {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 #ist>div:nth-child(2)>p+p {
@@ -613,7 +615,7 @@ a {
 }
 
 #ist>div:nth-child(3)>p {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 #ist>div:nth-child(3)>p+p {
@@ -642,7 +644,7 @@ a {
 }
 
 #ist>div:nth-child(4)>p {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 #ist>div:nth-child(4)>p+p {
