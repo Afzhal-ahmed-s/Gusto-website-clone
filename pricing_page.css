@@ -145,6 +145,7 @@ a{
     background-color: #fafafa;
     width: 100%;
     padding-top: 78px;
+    margin-top: -20px;
  }
 
  .i1_tooltip{
@@ -181,7 +182,6 @@ font-weight: 700 !important;
  .i1_mega_container{
     background-color: #fafafa;
     width: 100%;
-    height: 1700px;
  }
 
  .i1_h1_div{
@@ -671,10 +671,6 @@ font-weight: 700 !important;
     width: 140px;
     height: 79px;
     margin: auto;
- }
-
- .i4_p2 {
-     /* transform: scale(1, 1.15); */
  }
 
  /* .c1_i4, .c1_i4_v2{

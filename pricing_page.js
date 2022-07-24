@@ -70,7 +70,6 @@ if (trigger_text_content.textContent == "See plan details") {
   part2[0].classList.add("display_none");
   part2[1].classList.add("display_none");
   part2[2].classList.add("display_none");
-  mega_height.style.height = "1000px";
 }
 
 document
@@ -83,17 +82,18 @@ document
     // console.log(full_i1_flex);
     if (trigger_text_content.textContent == "See plan details") {
       trigger_text_content.textContent = "Hide plan details";
-      mega_height.style.height = "1800px";
-    } else {
-      trigger_text_content.textContent = "See plan details";
-      mega_height.style.height = "1000px";
-
       full_i1_flex[0].classList.toggle("i1_remove_mini_flex");
       full_i1_flex[1].classList.toggle("i1_remove_mini_flex");
       full_i1_flex[2].classList.toggle("i1_remove_mini_flex");
+    } else {
+      trigger_text_content.textContent = "See plan details";
+      window.scrollTo({
+        top: 120,
+        behavior: 'smooth'
+      });
     }
     $(".i1_mini_triple_flex_part2").slideToggle("slow", function () {
-      if (trigger_text_content.textContent == "Hide plan details") {
+      if (trigger_text_content.textContent == "See plan details") {
         full_i1_flex[0].classList.toggle("i1_remove_mini_flex");
         full_i1_flex[1].classList.toggle("i1_remove_mini_flex");
         full_i1_flex[2].classList.toggle("i1_remove_mini_flex");
