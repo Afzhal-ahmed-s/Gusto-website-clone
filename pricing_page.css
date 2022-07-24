@@ -6,6 +6,11 @@
     height: 40px;
 }
 
+.tooltip-inner a {
+    color: white !important;
+    text-decoration: underline !important;
+}
+
 /*------------------------------------Start NAVBAR -------------------------------------------*/
 #Navbar {
     display: flex;
