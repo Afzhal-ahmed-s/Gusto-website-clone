@@ -85,7 +85,7 @@ let strength = document.getElementById("power");
             //   console.log("name:",obj.name.length);
         if(obj.password.length<=0){
                 p1.innerText = "A valid password is required.";
-                strength.innerText = "To Week";
+                strength.innerText = "To Weak";
                 p1.style.color = "#c15732";
                 document.getElementById("bar").style.width="0%";
 
@@ -106,26 +106,26 @@ let strength = document.getElementById("power");
                 p1.innerText="";
                 document.getElementById("bar").style.width="5%";
                 document.getElementById("bar").style.backgroundColor="crimson";
-                // strength.innerText = "To Week";
+                // strength.innerText = "To Weak";
                if(obj.password.length>1){
                 document.getElementById("bar").style.width="10%";
                 document.getElementById("bar").style.backgroundColor="crimson";
-                strength.innerText = "To Week";
+                strength.innerText = "Too Weak";
             }
             if(obj.password.length>2){
                 document.getElementById("bar").style.width="20%";
                 document.getElementById("bar").style.backgroundColor="crimson";
-                strength.innerText = "To Week";
+                strength.innerText = "Too Weak";
             }
             if(obj.password.length>3){
                 document.getElementById("bar").style.width="30%";
                 document.getElementById("bar").style.backgroundColor="crimson";
-                strength.innerText = "Week";
+                strength.innerText = "Weak";
             }
              if(obj.password.length>4){
                 document.getElementById("bar").style.width="40%";
                 document.getElementById("bar").style.backgroundColor="teal";
-                strength.innerText = "Week";
+                strength.innerText = "Weak";
             }
             if(obj.password.length>5){
                 document.getElementById("bar").style.width="50%";

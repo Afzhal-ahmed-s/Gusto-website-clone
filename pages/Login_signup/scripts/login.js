@@ -12,12 +12,14 @@ function myFunction(event){
       let flag = false;
       UserData.forEach((el) => {
         if(el.email===email&&el.password===password){
+          localStorage.setItem("username",JSON.stringify(el.name));
           flag=true;
+          return;
       }   
       });
       if(flag===true){
         alert("login successfully!");
-          localStorage.setItem("username",JSON.stringify(el.name))
+          
           window.location.href="index.html";
       }else{
           alert("Invalid Password !");
