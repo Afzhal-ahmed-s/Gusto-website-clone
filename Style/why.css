@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#logo {
+    height: 40px;
+}
+
+/*Start NAVBAR */
+#Navbar {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%;
+
+    margin: auto;
+    height: 80px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#Navbar_right {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+#Navbar_right,
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+#Navbar_1 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+.fa-angle-down {
+    margin-left: 5px;
+    transition: all 0.4s ease;
+    color: black;
+}
+
+#head,
+.fa-angle-down:hover {
+    transform: rotate(180deg);
+    color: black;
+}
+
+#heading1:hover,
+#head:hover {
+    color: #12a0ac;
+    /* transform: r; */
+
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 250px;
+  /* margin-top: 20px; */
+  padding-top: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(59, 59, 59, 0.4);
+  padding: 12px 16px;
+  z-index: 1;
+  
+}
+.dropdown-content>p>a{
+    font-size: 13px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#hh{
+    color: #12a0ac;
+}
+.dropdown-content>p>a:hover{
+    color: #12a0ac;
+
+}
+
+#button_right {
+    display: flex;
+    gap: 10px;
+}
+
+#Search_button {
+    background-color: white;
+    border: none;
+    height: 40px;
+    width: 70px;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    /* margin-right: 10px; */
+}
+
+.fa-magnifying-glass {
+    color: #12a0ac;
+    font-size: 13px;
+    /* margin-left: 0px; */
+}
+
+#Sign_in {
+    background-color: #f8f5f2;
+    border: none;
+    border-radius: 7px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#craete_btn {
+    background-color: #f45d48;
+    border: none;
+    height: 40px;
+    width: 140px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+
+}
+
+#craete_btn,
+.textcreate {
+    color: white;
+}
+
+/* START TOP-SECTION */
+#Banner{
+    margin-top: -160px;
+}
+#Banner_Section{
+    background-image: url(https://prod.gusto-assets.com/wp-content/uploads/Hero_Desktop-LG%402x.png);
+    width: 100%;
+    /* display: flex; */
+    /* margin: auto; */
+    height: 700px;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-size:1500px 700px;
+/* margin-bottom: -200px; */
+    /* padding-top: -100px; */
+    text-align: center;
+    background-position: center;
+    /* line-height: 2px; */
+}
+#Banner_Section>#hea2{
+    padding-top: 270px;
+    color: #f45d48;
+    font-size: 18px;
+    font-weight: 700;
+}
+#Banner_Section>h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:600 ;
+    font-size: 40px;
+}
+#head2{
+    color: black;
+}
+
+#GetStarted{
+    background-color: #f45d48;
+    border: none;
+    height: 50px;
+    width: 180px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+    
+    }
+    #GetStarted>a{
+        color: white;
+        font-size: 17px;
+    }
+/* END TOP-SECTION */
+
+
+/* ------------------------------head_section */
+#hea5{
+    text-align: center;
+    margin-top: 50px;   
+}
+#hea5>h1{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 0px;
+}
+#modern_icon{
+    width: auto;
+    /* border: 1px solid black; */
+
+    padding:10px;
+}
+/* m-middle-section */
+#Middle_Section{
+    /* text-align: center; */
+    height: 200px;
+    margin-top: 150px;
+}
+#Middle_Section>h1{
+    font-size:40px;
+    /* text-align: center; */
+    margin-top: 100px;
+    font-weight: 600;
+}
+#imh{
+    width: 100px;
+    padding: 10px;
+    /* text-align: center; */
+    height: 70px;
+    
+}
+#M_mid_Section_1{
+    padding-top: 90px;
+     display: flex;
+     /* justify-content: space-around; */
+     gap: 20px;
+     width: 60%;
+     align-items: center;
+     margin: auto;
+     padding-bottom: 90px;
+ }
+ #modern_icon>a{
+    font-size: 17px;
+    font-weight: 600;
+}
+#modern_icon>a:hover{
+    border-bottom: 1px solid #12a0ac;
+    color: #12a0ac;
+}
+/* ---------------------------------PlAN-SECTION------------------------------------ */
+#plan{
+    background-color: #f8f5f2;
+    height: 250px;
+    padding-top: 80px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+#plan>h1{
+    font-size:40px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+#plan>button{
+    background-color: #f45d48;
+    border: none;
+    height: 50px;
+    width: 180px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+#plan>button>a{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    /* margin: auto; */
+    /* justify-content: center; */
+    /* text-align: center; */
+}
+/* learn */
+#plan3{
+    text-align: center;
+}
+
+/*---------------- MIDDLE-FLEX-SECTION ------------------------------------------------------------*/
+#middle_flex{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    /* padding: 50px; */
+    text-align: left;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin-bottom: 100px;
+    /* border: 1px solid black; */
+}
+#middle_flex1>h1{
+    font-size: 40px;
+    font-weight: 500;
+    /* padding: 10px; */
+}
+#middle_flex1>a{
+    color: #12a0ac;
+    font-size:18px;
+    font-weight: 500;
+}
+#desc{
+    line-height: 27px;
+    padding-bottom: 15px;
+}
+#hea3{
+    color: #f45d48;
+    font-weight: 600;
+    font-size: 18px;
+}
+#checked{
+    display: flex;
+    gap: 80px;
+    margin-top: 30px;
+    /* border: 1px solid black; */
+}
+
+#checked_2{
+    margin-left: -40px;
+}
+#Eligible{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    background-color:#feefe8;
+    border-radius: 7px;
+    width: 600px;
+}
+.fa-check{
+    color: #12a0ac;
+    font-size: 19px;
+    font-weight: 900;
+}
+#flex{
+    display: flex;
+    gap: 10px;
+    text-align: left;
+    align-items: center;
+    /* line-height: 12px; */
+}
+#image_banner{
+    width: 500px;
+    padding-top: 90px;
+}
+
+/* Employee-benefits-section */
+#Employee_benefit{
+    text-align: center;
+    background-color: #f8f5f2;
+}
+#EB_1{
+    padding-top: 50px;  
+}
+#EB_1>h1{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 55px;
+}
+#EP_p{
+    font-size: 18px;
+    line-height: 26px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+#EB_1>a{
+    color: #12a0ac;
+    font-size: 18px;
+    font-weight: 500;
+}
+#EB_1>a:hover{
+    border-bottom: 2px solid #12a0ac;
+}
+#EP_image{
+    width: 1300px;
+    height: auto;
+    /* margin: auto; */
+}
+/* ---------------------START-CARD-------------------- */
+#card_section{
+    display: flex;
+    gap: 30px;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+#Card_h2{
+    padding-top: 30px;
+}
+#card_section_1{
+    border: 1px solid #dddee0;
+    width: 400px;
+    height: 500px;
+    padding-left: 20px;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    line-height: 25px;
+    background-color: white;
+}
+#card_s{
+    font-size: 17px;
+}
+
+#Card_p{
+    border-bottom: 1px solid #525257;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+#card_section_2{
+    border: 1px solid #dddee0;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    text-align: left;
+    background-color: white;
+}
+#Director{
+    background-color: #f8f5f2;
+    height: 300px;
+}
+#Director>h1{
+    padding-top: 30px;
+    font-weight: 500;
+}
+#Direct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top:20px ;
+}
+#Direct>div>img{
+    width: 190px;
+}
+#Direct>div>p{
+    text-align: left;
+    font-size: 12px;
+}
+#integration{
+    background-color: #f8f5f2;
+    text-align: center;
+
+}
+#integration>div>a{
+    color: #12a0ac;
+}
+#integration>div>a:hover{
+    border-bottom: 2px solid #12a0ac;
+}
+#integration>div>#he_integ{
+    color: #f45d48;
+    padding-top: 60px;
+}
+/* #hea6{
+    color: black;
+} */
+#int_image{
+    width: 1000px;
+}
+#dedicated{
+    text-align: center;
+    padding-top:60px;
+    /* line-height: 25px; */
+    padding-bottom: 30px;
+    
+}
+#dedicated>h1{
+    font-size: 40px;
+}
+#D_footer{
+    background-color:#f45d48 ;
+    text-align:center;
+    height: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+#D_footer>h1{
+    font-size: 50px;
+    color: white;
+    font-weight: 500;
+}
+#D_footer>button{
+    border: none;
+    height: 50px;
+    background-color: white;
+    width: 170px;
+    border-radius: 8px;
+}
+#D_footer>button>a{
+    font-size: 18px;
+}
+#Insights{
+    color: #f45d48;
+    font-size: 18px;
+    font-weight: 700;
+}
+/* ------------------------------------------------------FOOTER----------------------------- */
+#Footer{
+    width: 80%;
+    margin: auto;
+}
+#Footer_Section{
+    display: flex;
+    padding-top: 100px;
+    
+}
+#inline_left>div>p,#middle_right>div>p,#right_inline>div>p{
+    color:#f45d48 ;
+    width: 170px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+}
+#inline_left>div{
+    display: block;
+    
+    /* padding-bottom: 40px !important; */
+
+
+    /* border: 1px solid black; */
+   
+    /* width: 180px; */
+    /* border: 1px solid black; */
+}
+#inline_left>div>a,#middle_right>div>a,#right_inline>div>a,#middle_left>div>a{
+    width: 160px;
+    font-size:16px;
+    padding-top: 20px;
+    color: #525257;
+    line-height: 35px;
+    text-align: left;
+
+}
+#inline_left>div>a:hover{
+    color:#12a0ac;
+}
+#a1{
+    width: 200px;
+}
+
+#inline_1{
+    width: 300px;
+}
+
+#middle_left>div{
+
+    /* display: block; */
+    width: 300px;
+    
+}
+#middle_left>div>p{
+    color:#f45d48;
+    width: 170px;
+    font-weight: 600;
+    text-align: left;
+    
+}
+#middle_left>div>a:hover,#right_inline>div>a:hover,#middle_right>div>a:hover{
+    color:#12a0ac;
+}
+
+#middle_right>div{
+    width: 300px;
+    margin-left: 100px;
+}
+#middle_right>div>p,#right_inline>div>p{
+    color:#f45d48;
+    width: 170px;
+    font-weight: 600;
+}
+#mid_Footer{
+    margin-top: 70px;
+}
+
+#word{
+    display: flex;
+   
+}
+#Bd{
+    border-top: 1px solid #dddee0;
+    padding-left: 150px;  
+    padding-top: 30px;
+    line-height: 30px;
+}
+#Bd>a{
+    color: #525257;
+    
+}
+#word1{
+    /* margin-left: 0px; */
+    margin-right: 40px;
+    color: #525257;
+
+
+}
+#heading1{
+    margin-top: -2px;
+}
+.head{
+    color: #12a0ac;
+    font-size: 16px;
+    font-weight: 600;
+}
+#below_Footer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    color: #525257;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+#below_Footer>i{
+    color: #848484;
+}
+#below_Footer>i:hover{
+    color: #12a0ac;
+    font-size: 19px;
+}
+/* -------------------------------------end-Footer------------------------------------------------------------- */
