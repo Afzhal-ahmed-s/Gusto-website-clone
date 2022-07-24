@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Gusto-css/style.css">
+    <link rel="shortcut icon"
+        href="data:image/png;base64,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"
+        type="image/x-icon">
+    <script src="https://kit.fontawesome.com/457bb5a52c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="Navbar">
+
+    </div>
+    <div id="main">
+        <div>
+            <h1>Starting a business?<br>
+                You’re in the  right <br>
+                 place.</h1>
+        </div>
+        <div>
+            <img src="https://prod.gusto-assets.com/wp-content/uploads/inception_hero%402x.png">
+        </div>
+    </div>
+    <div id="animation">
+        <img src="https://prod.gusto-assets.com/wp-content/uploads/animated_icon_200x200.gif">
+        <p>The people platform</p>
+    </div>
+    <div id="bussiness">
+        <p>Gusto makes it easy to pay your team,<br>
+            manage benefits, and protect your new <br>
+            business.</p>
+            <p>Now’s the perfect time to get your business organized and ready to grow.<br>
+                Whether you plan to work in an office, a shop, on the go, or at home, our all-in-one people platform was built for <br>
+                you.</p>
+    </div>
+    <div id="complete">
+        <div>
+            <img src="https://prod.gusto-assets.com/wp-content/uploads/select_a_plan_short%402x.png">
+        </div>
+        <div>
+            <p>Step 1: Pick your plan</p>
+           
+                <p>Pick a plan that works for your <br>
+                    business and budget.</p>
+                    <p>Everyone is different. Whether you just need an easy way to get<br>
+                         paychecks out to your small team, or access to certified HR experts, we<br>
+                          have you covered. And prices start at just $46/month.</p>
+            <p>Compare all plans and prices</p>
+           
+             
+        </div>
+    </div>
+    <div id="complete-2">
+        <div>
+            <p>Step 2: Add benefits</p>
+           
+                <p>Add benefits employees will <br>
+                    love (and you can afford).</p>
+                    <p>Businesses of all sizes can offer great benefits. We have affordable <br>
+                        health coverage options, 401(k) plans, free financial planning tools,<br>
+                         and so much more.</p>
+            <p>Browse no-cost,low-cost, and premium benefit plans</p>
+        </div>
+        <div>
+           <img src="https://prod.gusto-assets.com/wp-content/uploads/add_benefits%402x-1-1536x1025.png">
+        </div>
+
+    </div>
+
+    <div id="complete-3">
+        <div>
+            <img src="https://prod.gusto-assets.com/wp-content/uploads/add_emplpoyees_short%402x.png">
+        </div>
+        <div>
+            <p>Step 3: Build your team</p>
+           
+                <p>Get your new hires set up for<br>
+                     success.
+                    </p>
+                    <p>Now for the fun part: building your team. Send offer letters, manage<br>
+                         onboarding, and set up software in just a few clicks. Your employees<br>
+                          create their own Gusto accounts, and 
+                          we help with forms and <br>
+                          compliance.</p>
+            <p>Learn more about hiring and onboarding</p>
+           
+             
+        </div>
+
+    </div>
+
+    <div id="complete-4">
+        <div>
+            <p>Step 4: Pay your team</p>
+           
+                <p>Automatically file taxes every <br> time you run payroll. <br>
+                    </p>
+                    <p>Ready to pay your employees? Good news! We’ve already calculated<br> 
+                        everyone’s wages, taxes, and deductions.<br><br>
+
+                        Direct deposits can be made as soon as the next business day for<br>
+                        qualifying businesses. Then, we file and send your payroll taxes to all<br>
+                        the right local, state, and federal agencies.</p>
+            <p>Explore payroll features</p>
+        </div>
+        <div>
+           <img src="https://prod.gusto-assets.com/wp-content/uploads/pay_your_team%402x-2.png">
+        </div>
+
+    </div>
+    <div id="mid">
+        <h3>“Without Gusto, I’d be lost. They’ve made my <br>
+            first business foray an amazing adventure, and<br>
+            kept me from horrible mistakes.“</h3>
+            <div id="sign">
+                <div>
+                    <img src="https://prod.gusto-assets.com/wp-content/uploads/quote_signature%402x.png">
+                </div>
+                <div>
+                    <p>Southern Oregon StoneCraft LLC</p>
+                </div>
+            </div>
+    </div>
+
+    <div id="mid-2">
+        <div>
+            <img src="https://prod.gusto-assets.com/wp-content/uploads/customer_service%402x.png">
+        </div>
+        <div>
+            <h3>Hey there! What can we <br>
+                help you with?</h3>
+                <p>You don’t have to be a payroll expert to start your business. With<br>
+                Gusto, you have a friendly team right by your side giving you the<br> 
+                answers and advice you need.</p>
+        </div>
+
+
+
+    </div>
+
+    
+    <div id="faq">
+        <div id="faq1">
+            <h1>Any questions? Ask away.</h1>
+            <ul>
+                <li>
+                    <input type="checkbox" checked="">
+                    <i></i>
+                    <h2>What forms do I need?</h2>
+                    <p>We’ve written a helpful article that lists the federal payroll forms for new businesses — there are even download links. And these are exactly the types of forms you can digitally sign and store on Gusto, so you’ll know they’re in one, easy-to-access place.</p>
+                </li>
+                <li>
+                    <input type="checkbox" checked="">
+                    <i></i>
+                    <h2>Are benefits included?</h2>
+                    <p>Gusto-brokered benefits administration is included for no additional cost with our Simple, Plus, and Premium plans. Which benefits you want to add is completely up to you.<br><br>
+        
+                        Keep in mind, while managing your benefits on Gusto is free, offerings like traditional health insurance or 401(k)s will require monthly fees or premiums. <br><br>
+                        
+                        But some benefits don’t cost anything extra, like our financial planning tools for employees. Adding these benefits is a no brainer for employers who want to take care of their team beyond the workplace.</p>
+                </li>
+                <li>
+                    <input type="checkbox" checked="">
+                    <i></i>
+                    <h2>Can I send paper checks?</h2>
+                  <p>Can I send paper checks?
+        
+                    Yes! If you prefer paper checks instead of direct deposits, we’ll give you a template to print those paystubs yourself.<br><br>
+                    
+                    Quick tip: If you have employees interested in setting up bank accounts, employees can use Gusto Wallet to have their wages deposited into a simple cash account with a debit card. It’s a free financial planning tool and helps your team get access to their money quickly and easily.<br><br>
+                    
+                    Cash Accounts and the Gusto Debit Card are issued by nbkc bank, Member FDIC. The Cashout Program is issued by Sunrise Banks, N.A., Member FDIC. The Sunrise Banks, N.A. Privacy Policy can be found here.</p>
+                </li>
+                <li>
+                    <input type="checkbox" checked="">
+                    <i></i>
+                    <h2>Can I set up automatic payroll each month?</h2>
+                  <p>Yes! A lot of small businesses with straightforward wages use our Payroll on AutoPilot™ feature. You just set your employees’ hours and wages or salary amount and when they should be paid, then we process payroll for you automatically every month. It’s a great way to avoid stress and save time. Plus, we’ll even send you a reminder one day before, in case you want to make changes.</p>
+                </li>
+                <li>
+                    <input type="checkbox" checked="">
+                    <i></i>
+                    <h2>I have more questions.</h2>
+                  <p>Feel free to use the chat box in the bottom right corner of your screen. We also have a Help Center with answers, resources, and ways to get in touch with our team directly.</p>
+                </li>
+            </ul>
+          </div>
+    </div>
+      
+
+    <div class="sub">
+        <div id="ist">
+            <div>
+                <h3>Expert advice for new businesses.
+                </h3>
+                <p>Don’t have all the answers? <br>
+                    That’s okay! We’ve put together<br>
+                     easy guides and helpful articles <br>
+                     for new businesses like yours.</p>
+            </div>
+            <div>
+                <img src="https://gusto.com/wp-content/uploads/2019/04/Starting_Business_Editorial.jpg">
+                <h7>The Definitive Guide to<br> Starting a Business</h7>
+                <p>This is it. You’ve started the<br>
+                     journey of starting a <br>
+                     business. You have an idea, and you’re...</p>
+                <p>Read more</p>
+            </div>
+            <div>
+                <img src="https://prod.gusto-assets.com/wp-content/uploads/how-to-pay-yourself-small-business-owner%402x-1.jpg">
+                <h7>The Definitive Guide to<br> Starting a Business</h7>
+                <p>This is it. You’ve started the<br>
+                     journey of starting a <br>
+                     business. You have an idea, and you’re...</p>
+                <p>Read more</p>
+            </div>
+            <div>
+                <img src="https://gusto.com/wp-content/uploads/2018/12/How-to-Hire-Your-First-1099-Employee-2.jpg">
+                <h7>The Definitive Guide to<br> Starting a Business</h7>
+                <p>This is it. You’ve started the<br>
+                     journey of starting a <br>
+                     business. You have an idea, and you’re...</p>
+                <p>Read more</p>
+            </div>
+        </div>
+        <div id="single">
+            <p>The people platform</p>
+        </div>
+        <div id="manage">
+            <h2>Manage your growing<br>
+                team, all in one place.</h2>
+                <p>Behind every successful business is a thriving team. Hire, pay, insure, and<br>
+                    support your employees with Gusto’s all-in-one people platform.</p>
+                <p>Learn more</p>
+        </div>
+
+        <div id="images">
+            <div>
+                <img src="https://prod.gusto-assets.com/wp-content/uploads/HROS_Payrolll.svg">
+                <p>Full-service <br>payroll</p>
+            </div>
+            <div>
+                <img src="https://prod.gusto-assets.com/wp-content/uploads/HROS_Benefits.svg">
+                <p>Employee<br> benefits</p>
+            </div>
+            <div>
+                <img src="https://prod.gusto-assets.com/wp-content/uploads/HROS_TimeAndAttendance.svg">
+                <p>Time and<br> attendance</p>
+            </div>
+            <div>
+                <img src="https://prod.gusto-assets.com/wp-content/uploads/HROS_HiringAndOnboarding.svg">
+                <p>Hiring and <br>onboarding</p>
+            </div>
+            <div>
+                <img src="https://prod.gusto-assets.com/wp-content/uploads/HROS_TalentManagement.svg">
+                <p>Talent<br> management</p>
+            </div>
+            <div>
+                <img src="https://prod.gusto-assets.com/wp-content/uploads/HROS_InsightsAndReporting.svg">
+                <p>Insights and<br> reporting</p>
+            </div>
+        </div>
+        
+
+
+    </div>
+    <div class="gusto">
+        <p>Prices start at just $46/month</p>
+        <h2>Get your team<br>
+            working with Gusto.</h2>
+        <center><button >Get started</button></center>
+
+    </div>
+    <div id="Footer">
+    </div>
+   
+
+</body>
+</html>
+<script type="module" src="Gusto-start-business-scripts/Gusto start-bussiness.js"></script>
+

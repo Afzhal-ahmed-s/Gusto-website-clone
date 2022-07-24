@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+#employees{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* border: 1px solid; */
+    width: 40%;
+    margin: auto;
+    justify-items: center;
+    padding: 40px;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+
+}button{
+    width: 100%;
+    padding: 17px;
+    margin: 7px;
+    background-color: teal;
+    border: transparent;
+    border-radius: 5px;
+    font-size: 17px;
+    color: white;
+
+}#logo{
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin:0px 0px 10px 0px;
+    width: 100%;
+}#logo>img{
+    width: 100px;
+}u{
+    color: teal;
+    cursor: pointer;
+
+}#footer{
+    width: 40%;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+}#buttons{
+    width: 100%;
+}h3{
+    cursor: pointer;
+    color: teal;
+    margin-top: 20px;
+    margin-left: 10px;
+}#timediv{
+    width: 150px;
+    display: block;
+   text-align: center;
+}#time1{
+    width: 100%;
+    margin: 20px;
+}#time2{
+    width: 50px;
+    align-self: center;
+    /* margin: auto; */
+}
