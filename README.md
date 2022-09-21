@@ -1,9 +1,11 @@
 
-![image](https://gusto.com/gusto-logo.png)
+![image](https://images.expertmarket.co.uk/wp-content/uploads/sites/2/2021/11/gusto-payroll.png)
+
+<br>
 
 > Gusto's people platform helps growing businesses onboard, pay, insure, and support their hardworking teams with payroll, benefits, and more.
 
-The Gusto website has been cloned by myself and my team of 6 members as project of our construct week at **Masai School** over 5 days.
+The Gusto website has been cloned by myself and my team of 5 members as project of our construct week at **Masai School** over 5 days.
 
 
 > [Gusto](https://www.gusto.com) 
