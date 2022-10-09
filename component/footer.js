@@ -100,33 +100,6 @@ function footer(){
         </div>
     </div>
 
-
-
-    <div id="mid_footer">
-        <div id="word">
-            <div id="word1">
-                <h3 id="heading1">Talk Shop:Business Resources</h3><br>
-                <a href="#" class="head">Talk Shop Blog</a><br>
-                <p>Advice and information for <br> growing businesses and their <br>teams</p>
-            </div>
-            <div id="Bd">
-                <a href="#">Running Payroll</a><br>
-                <a href="#">Employee benefits</a><br>
-                <a href="#">Health insurance</a><br>
-                <a href="#">People management</a>
-            </div>
-            <div id="Bd">
-                <a href="#">Worker's comp</a><br>
-                <a href="#">Starting a business</a><br>
-                <a href="#">Business Finances</a>
-            </div>
-            <div id="Bd">
-                <a href="#">Hiring</a><br>
-                <a href="#">Growth</a><br>
-                <a href="#">Taxes</a>
-            </div>
-        </div>
-    </div>
     <div id="below_Footer">
         <h3 style="color: black; font-size: 16px; font-weight: 500;">Gusto ©2022</h3>
         <p>Brokers</p>
