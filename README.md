@@ -85,7 +85,7 @@ know their needs and to provide service accordingly and
  
 ## Demo
 
->Link - [Gusto](https://sparkly-narwhal-1816c1.netlify.app/)
+>Link - [Gusto](https://delightful-faloodeh-753d39.netlify.app/pricing_page.html)
 
 >Project demonstration link- 
 <a href="https://drive.google.com/file/d/1qTKfgAYVwWyTJ_N6r67cNfglHwAz5QXp/view?usp=sharing">click here</a>
