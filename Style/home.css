@@ -13,6 +13,8 @@ body {
 
 /*------------------------------------Start NAVBAR -------------------------------------------*/
 #Navbar {
+    font-size: 13px;
+    /* font-weight: bold; */
     display: flex;
     /* justify-content: space-between; */
     align-items: center;

@@ -1,5 +1,5 @@
 let username = JSON.parse(localStorage.getItem("username")) || "";
-let user=0;
+let user = 0;
 let create ="Create Account";
 if(username.length<=0){
     
@@ -12,9 +12,8 @@ if(username.length<=0){
 }
 // console.log("username:",username);
 
-function Navbar(){
-    return`
-    <div id="Navbar_1">
+let Navbar = () => {
+    return `<div id="Navbar_1">
         <div id="Navbar_right">
 
             <div id="Image">
@@ -73,6 +72,7 @@ function Navbar(){
     </div>
     `;
 }
+
 export default Navbar;
 
 // if(user===1){
