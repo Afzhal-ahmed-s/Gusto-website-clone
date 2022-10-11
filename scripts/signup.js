@@ -191,7 +191,7 @@ let strength = document.getElementById("power");
         }
     }
 
-    document.querySelector("#getstarted").addEventListener("click",myFunction);
+    document.getElementById("form").addEventListener("submit",myFunction);
 function myFunction(event){
     event.preventDefault();
     let obj = {
