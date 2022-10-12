@@ -24,7 +24,7 @@ function myFunction(event){
       alert("login successfully!");
         window.location.href="index.html";
     }else{
-        alert("Invalid Password !");
+        alert("Wrong Credentials ..!!");
     }
       console.log("happy");
     }
