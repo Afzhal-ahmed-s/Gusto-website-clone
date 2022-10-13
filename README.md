@@ -85,7 +85,7 @@ know their needs and to provide service accordingly and
  
 ## Demo
 
->Link - [Gusto](https://delightful-faloodeh-753d39.netlify.app/pricing_page.html)
+>Link - [Gusto](https://bucolic-elf-c9836a.netlify.app/)
 
 >Project demonstration link- 
 <a href="https://drive.google.com/file/d/1qTKfgAYVwWyTJ_N6r67cNfglHwAz5QXp/view?usp=sharing">click here</a>
